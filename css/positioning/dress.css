@@ -1,0 +1,17 @@
+img.octopus {
+	display: block;
+	margin: auto;
+}
+
+img.glasses {
+	position: relative;
+	top: 160px;
+	left: 564px;
+}
+
+img.hat {
+	position: relative;
+	top: 90px;
+	left: 360px;
+}
+
