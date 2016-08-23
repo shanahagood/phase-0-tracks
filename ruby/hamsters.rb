@@ -1,5 +1,5 @@
 puts "What is the hamster's name?"
-ham_nam = gets.chomp
+ham_name = gets.chomp
 puts "What is your volume level? (1-10)"
 vol_level = gets.chomp.to_i
 puts "What is the hamster's fur color?"
@@ -13,7 +13,7 @@ ham_age = gets.chomp.to_i
 	else 
 		ham_age = ham_age
 	end 
-puts "Name: #{ham_name}"
+puts "Hamster's Name: #{ham_name}"
 puts "Volume level: #{vol_level}"
 puts "Fur color: #{fur_color}"
 puts "Adoptable: #{candidacy}"
