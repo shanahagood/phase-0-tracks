@@ -1,0 +1,14 @@
+-Specify your "desired" floor (1-10).
+-Specify your "current" floor (1-10).
+-Start the "floor remaining" counter at 0 floors.
+-Every time a floor is passed, until "desired" floor is reached:
+	-Say the "current" floor.
+-If "desired" floor is greather than "current" floor:
+	-Add 1 to the "floor remaining" count.
+	-Say the "floor remaining" count.
+-If "desired" floor is lower than "current" floor:
+	-Subtract 1 from the "floor remaining" count
+	-Say the "floor remaining" count.
+-Otherwise:
+	-If it is "desired" floor:
+		- Say "I've made it!"
