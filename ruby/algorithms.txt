@@ -1,7 +1,7 @@
 Task: Use elevator
 - Specify your "desired" floor (1-10).
 - Specify your "current" floor (1-10).
-- Start the "floor remaining" counter at 0 floors.
+- Start the "floor remaining" count at 0 floors.
 - Every time a floor is passed, until "desired" floor is reached:
 	- Say the "current" floor.
 - If "desired" floor is greather than "current" floor:
@@ -11,7 +11,12 @@ Task: Use elevator
 	- Subtract 1 from the "floor remaining" count
 	- Say the "floor remaining" count.
 - Otherwise:
-	- If it is "desired" floor:
+	- If you are on "desired" floor:
 		- Say "I've made it!"
 
-
+Task: Make a 5-ingredient sandwich
+- Start the "ingredient number" count at 5. 
+- Until "ingredient number" reaches 0:
+	- Subtract 1 from the "ingredient number." 
+	- Say which ingredient has been added.
+- Say "Sandwich is complete and ready to eat!" 
