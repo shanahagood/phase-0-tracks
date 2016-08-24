@@ -11,6 +11,7 @@
 	-Say the "floor remaining" count.
 -Otherwise:
 	-If it is "desired" floor:
+<<<<<<< HEAD
 		- Say "I've made it!"
 
 
@@ -20,3 +21,6 @@ Task: Make a 5-ingredient sandwich
 	- Subtract 1 from the "ingredient number." 
 	- Say which ingredient has been added.
 - Say "Sandwich is complete and ready to eat!" 
+=======
+		- Say "I've made it!"
+>>>>>>> d05fec15b1266fdf29d246b34559e141599eeb11

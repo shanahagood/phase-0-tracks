@@ -1,0 +1,37 @@
+header {
+    background-color: yellow;
+    width: 400px;
+    font-family: "Arial";
+    color: red;
+}
+header:after {
+    background-image:url(https://octodex.github.com/images/baracktocat.jpg);
+    background-size: 400px 400px;
+    display: inline-block;
+    width: 400px; 
+    height: 400px;
+    content:"";
+}
+
+footer {
+    background-color: green;
+    width: 400px;
+    font-family: "Verdana";
+    color: yellow;
+}
+.column-1 {
+    display: inline-table;
+    background-color: red;
+    width: 200px;
+    height: 1650px;
+    font-family: "Courier New";
+    color: tan;
+}
+.column-2 {
+    display: inline-table;
+    background-color: blue;
+    width: 200px;
+    height: 1650px;
+    font-family: "Georgia";
+    color: #6495ED;
+}
