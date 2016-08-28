@@ -1,31 +1,43 @@
 
+
+#Ask how many employees need to be processed.
 puts "How many employees would you like to process?"
 user_process = gets.chomp
+  
+#Create a count that subtracts 1 from the input process number.
+#This will ensure the program updates the number of employees 
+#needing to be processed as it goes through each employee. 
+while process_number != 0
+process_number = process_number.to_i - 1
 
-puts "May I please have your name?"
+#Ask user for name
+puts "What is your name?"
 user_name = gets.chomp
-if user_name == "Drak Cula" || "Tu Fang"
+if user_name == "Drak Cula" || user_name == "Tu Fang"
   def_a_vampire = true 
 else 
   def_a_vampire = false
 end 
 
+#Ask user for age
 puts "How old are you?"
-i = gets.chomp
-if i < 110.to_s
-  user_age = false
+age_input = gets.chomp
+if age_input.to_i < 110
+  user_age = true
 else 
-  user_age = true 
+  user_age = false 
 end
 
+#Ask user for year of birth
 puts "What year were you born?"
-birth_year = gets.chomp
-if birth_year < 1906.to_s
+year_input = gets.chomp
+if year_input.to_i < 1906
   year_born = false 
 else
   year_born = true 
-end  
+end 
 
+#Ask user if they would like to order garlic bread
 puts "Our company cafeteria serves garlic bread. Should we order some for you? (yes/no)"
 garlic_bread = gets.chomp
 if garlic_bread == "yes"
@@ -34,6 +46,7 @@ else
   likes_garlic = false
 end
 
+#Ask user if they want health insurance
 puts "Would you like to enroll in the company's health insurance? (yes/no)"
 health_insurance = gets.chomp
 if health_insurance == "yes"
@@ -42,21 +55,19 @@ else
   motal = false 
 end 
 
-puts "Name: #{user_name}"
-puts "Age: #{i}"
-puts "Year of birth: #{birth_year}"
-puts "Wants garlic bread?: #{garlic_bread}"
-puts "Wants health insurance?: #{health_insurance}"
-
- 
+#Print results
 if user_age && (likes_garlic || mortal) == true
-	puts "Conclusion: Probably not a vampire."
+  puts "Results: Probably not a vampire."
 elsif user_age && (likes_garlic || mortal) == false 
-	puts "Conclusion: Probably a Vampire."
+  puts "Results: Probably a Vampire."
 elsif user_age && (likes_garlic && mortal) == false
-	puts "Conclusion: Almost certainly a vampire."
-elsif user_name == false
-	puts "Definitely a vampire"
+  puts "Results: Almost certainly a vampire."
+elsif def_a_vampire == true
+  puts "Results: Definitely a vampire"
 else 
-	puts "Conclusion: Inconclusive."
+  puts "Results: Inconclusive."
 end 
+
+#Tell user the number of employees left to be processd. 
+puts "#{process_number} employees left to process."
+end
