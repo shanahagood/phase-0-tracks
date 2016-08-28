@@ -52,7 +52,24 @@ health_insurance = gets.chomp
 if health_insurance == "yes"
   mortal = true
 else 
-  motal = false 
+  mortal = false 
+end 
+
+#Create a loop that asks user for allergens.
+#Ask uer if they have any allergies. 
+#Prompt user to input allergens one by one, typing "done" when finished. 
+#While input allergen is not equal to sunshine:
+#-prompt user to input more allergens.
+#--if input allergen is equal to "done" or "sunshine":
+#----Stop the loop.
+puts "Do you have any allergens we should be aware of? Please enter one at a time. When finished, type done."
+allergen_input = gets.chomp
+while allergen_input != "sunshine" 
+  puts "Next allergen, please."
+  allergen_input = gets.chomp
+    if allergen_input == "done" || allergen_input == "sunshine"
+      break 
+    end 
 end 
 
 #Print results
