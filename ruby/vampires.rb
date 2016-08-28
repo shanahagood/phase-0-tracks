@@ -2,7 +2,7 @@
 
 #Ask how many employees need to be processed.
 puts "How many employees would you like to process?"
-user_process = gets.chomp
+process_number = gets.chomp
   
 #Create a count that subtracts 1 from the input process number.
 #This will ensure the program updates the number of employees 
@@ -88,3 +88,5 @@ end
 #Tell user the number of employees left to be processd. 
 puts "#{process_number} employees left to process."
 end
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
