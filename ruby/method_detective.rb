@@ -16,7 +16,7 @@
  "Stop! You’re under arrest!".upcase
 # => "STOP! YOU’RE UNDER ARREST!"
 
-# "the usual".
+ "the usual".concat(" subjects")
 #=> "the usual suspects"
 
  " suspects".prepend("the usual")
