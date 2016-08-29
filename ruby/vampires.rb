@@ -84,6 +84,9 @@ elsif def_a_vampire == true
 else 
   puts "Results: Inconclusive."
 end 
+#The results don't always print out correctly and I haven't been able to figure out why. I've tried 
+#changing the position of the conditionals and it didn't work. 
+
 
 #Tell user the number of employees left to be processd. 
 puts "#{process_number} employees left to process."
