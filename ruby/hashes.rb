@@ -20,18 +20,19 @@ client_info = {}
 
 puts "May I please have your name?"
 cl_name = gets.chomp
-client_info["name"] = cl_name
+client_info["name"] = cl_name.to_s
 
-puts "May I please have your age?"
+puts "May I please have your age? (enter a number)"
 cl_age = gets.chomp
-client_info["Age"] = cl_age
+client_info["Age"] = cl_age.to_i
 
-puts "Would you please tell me the number of children you have?"
+puts "Would you please tell me the number of children you have? (enter a number)"
 num_children = gets.chomp
-client_info["Number of Children"] = num_children
+client_info["Number of Children"] = num_children.to_i
 
 puts "Which decor theme do you prefer?"
 dec_theme = gets.chomp
-client_info["Decor theme"] = dec_theme 
+client_info["Decor theme"] = dec_theme.to_s 
 
 puts client_info
+
