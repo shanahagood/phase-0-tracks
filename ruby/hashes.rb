@@ -26,7 +26,7 @@ puts "May I please have your age? (enter a number)"
 cl_age = gets.chomp
 client_info["Age"] = cl_age.to_i
 
-puts "Would you please tell me the number of children you have? (enter a number)"
+puts "How many children do you have? (enter a number)"
 num_children = gets.chomp
 client_info["Number of Children"] = num_children.to_i
 
@@ -36,3 +36,15 @@ client_info["Decor theme"] = dec_theme.to_s
 
 puts client_info
 
+puts "Is there anything you would like to update? (yes/no)"
+answer = gets.chomp
+if answer == "yes"
+	puts "What would you like to update?"
+	puts "Type in one of these options: Name | Age | Number of Children | Decor Theme"
+	option = gets.chomp
+	puts "Please enter your information."
+elsif answer == "no"
+	puts "Nothing to update. Got it!"
+end 
+
+puts client_info 
