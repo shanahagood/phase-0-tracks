@@ -30,7 +30,7 @@ puts "How many children do you have? (enter a number)"
 num_children = gets.chomp
 client_info["Number of Children"] = num_children.to_i
 
-puts "Which decor theme do you prefer?"
+puts "What type of decor theme do you prefer?"
 dec_theme = gets.chomp
 client_info["Decor theme"] = dec_theme.to_s 
 
@@ -42,7 +42,23 @@ if answer == "yes"
 	puts "What would you like to update?"
 	puts "Type in one of these options: Name | Age | Number of Children | Decor Theme"
 	option = gets.chomp
-	puts "Please enter your information."
+	case option
+		when "name" then puts "please update"
+		client_info[:name] = gets.chomp
+		puts "Name has been updated!"
+		puts cl_name.to_sym
+		when "age" then puts "please update"
+		client_info[:age] = gets.chomp
+		puts "Age has been updated!"
+		puts cl_age.to_sym
+		when "number of children" then puts "please update"
+		client_info[:num_of_children] = gets.chomp
+		puts "Number of children has been updated!"
+		puts children.to_sym
+		when "decor theme" then puts "please update"
+		client_info[:decor_theme] = gets.chomp
+		puts "Decor theme has been updated!"
+		puts theme.to_sym
 elsif answer == "no"
 	puts "Nothing to update. Got it!"
 end 
