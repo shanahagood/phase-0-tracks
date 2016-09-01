@@ -48,3 +48,8 @@ music = {
 music[:pop_band][:members][0]="Mikumo Geynemer"
 puts music[:pop_band][:members][0]
 p music[:pop_band][:members]
+
+#Test 2-Add data to an index
+music[:country_band][:members].push("Natalie Maines")
+puts music[:country_band][:members]
+p music[:country_band][:members]
