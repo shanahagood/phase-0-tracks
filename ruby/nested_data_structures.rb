@@ -53,3 +53,7 @@ p music[:pop_band][:members]
 music[:country_band][:members].push("Natalie Maines")
 puts music[:country_band][:members]
 p music[:country_band][:members]
+
+#Test 3-Delete data by index
+music[:rock_band][:members].delete_at(0)  
+p music [:rock_band][:members]
