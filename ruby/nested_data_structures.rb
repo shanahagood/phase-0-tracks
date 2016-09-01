@@ -47,6 +47,9 @@ music = {
 #Test 1-Access specified band member name by index
 p music[:pop_band][:members][2]
 
+# Test 2-Access specified hash
+music[:rock_band][:band_info] 
+
 #Test 4-Edit data inside an index
 music[:pop_band][:members][0]="Mikumo Geynemer"
 puts music[:pop_band][:members][0]
