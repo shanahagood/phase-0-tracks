@@ -56,12 +56,10 @@ p music [:rock_band]
 
 #Example 4-Change an item inside an array
 music[:pop_band][:members][0]="Mikumo Geynemer"
-puts music[:pop_band][:members][0]
-p music[:pop_band][:members]
+p music[:pop_band][:members][0]
 
 #Example 5-Add an item to an array by index
 music[:country_band][:members].push("Natalie Maines")
-puts music[:country_band][:members]
 p music[:country_band][:members]
 
 #Example 6-Delete an item in an array by index
