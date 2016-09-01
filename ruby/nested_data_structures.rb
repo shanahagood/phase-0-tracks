@@ -43,3 +43,8 @@ music = {
 	}
 
 }
+
+#Test 1-Edit data inside an index
+music[:pop_band][:members][0]="Mikumo Geynemer"
+puts music[:pop_band][:members][0]
+p music[:pop_band][:members]
