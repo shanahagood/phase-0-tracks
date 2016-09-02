@@ -37,11 +37,11 @@ client_info[:decor_theme] = dec_theme.to_s
 puts client_info
 
 puts "Is there anything you would like to update? (yes/no)"
-answer = gets.chomp
+answer = gets.chomp.downcase
 if answer == "yes"
 	puts "What would you like to update?"
 	puts "Type in one of these options: Name | Age | Number of Children | Decor Theme"
-	option = gets.chomp
+	option = gets.chomp.downcase
 	case option
 		when "name" then puts "please update"
 		client_info[:name] = gets.chomp
@@ -58,10 +58,10 @@ if answer == "yes"
 		when "decor theme" then puts "please update"
 		client_info[:decor_theme] = gets.chomp
 		puts "Decor theme has been updated!"
-		puts theme.to_sym
+		puts dec_theme.to_sym
 	end 
 elsif answer == "no"
 	puts "Nothing to update. Got it!"
 end 
-
+ 
 puts client_info 
