@@ -20,19 +20,19 @@ client_info = {}
 
 puts "May I please have your name?"
 cl_name = gets.chomp
-client_info["name"] = cl_name.to_s
+client_info[:name] = cl_name.to_s
 
 puts "May I please have your age? (enter a number)"
 cl_age = gets.chomp
-client_info["Age"] = cl_age.to_i
+client_info[:age] = cl_age.to_i
 
 puts "How many children do you have? (enter a number)"
 num_children = gets.chomp
-client_info["Number of Children"] = num_children.to_i
+client_info[:num_of_children] = num_children.to_i
 
 puts "What type of decor theme do you prefer?"
 dec_theme = gets.chomp
-client_info["Decor theme"] = dec_theme.to_s 
+client_info[:decor_theme] = dec_theme.to_s 
 
 puts client_info
 
@@ -59,6 +59,7 @@ if answer == "yes"
 		client_info[:decor_theme] = gets.chomp
 		puts "Decor theme has been updated!"
 		puts theme.to_sym
+	end 
 elsif answer == "no"
 	puts "Nothing to update. Got it!"
 end 
