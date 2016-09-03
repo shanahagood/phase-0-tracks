@@ -49,16 +49,13 @@ if answer == "yes"
 		puts "Name has been updated to #{client_info[:name]}!"
 		when "age" then puts "please update"
 		client_info[:age] = gets.chomp
-		puts "Age has been updated!"
-		puts cl_age.to_sym
+		puts "Age has been updated to #{client_info[:age]}!"
 		when "number of children" then puts "please update"
 		client_info[:num_of_children] = gets.chomp
-		puts "Number of children has been updated!"
-		puts children.to_sym
+		puts "Number of children has been updated to #{client_info[:num_of_children]}!"
 		when "decor theme" then puts "please update"
 		client_info[:decor_theme] = gets.chomp
-		puts "Decor theme has been updated!"
-		puts dec_theme.to_sym
+		puts "Decor theme has been updated to #{client_info[:decor_theme]}!"
 	end 
 elsif answer == "no"
 	puts "Nothing to update. Got it!"
