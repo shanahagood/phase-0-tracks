@@ -14,6 +14,18 @@ first_name = gets.chomp
 puts "What is your last name?"
 last_name = gets.chomp
 
+full_name = [
+first_name,
+last_name
+]
 
-swap_name = last_name, first_name.gsub(first_name, last_name) 
-puts "Swapped name is #{swap_name}!"  
+puts full_name 
+
+# name_array = first_name.split 
+
+
+# swap_name = last_name, first_name.gsub(first_name, last_name) 
+# puts "Swapped name is #{swap_name}!"  
+
+
+
