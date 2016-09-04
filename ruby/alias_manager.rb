@@ -6,6 +6,7 @@
 #  -If there are consonants:
 # 	 -Advance each consonant by one in the alphabet. 
 
+full_name = []
 #Ask user for first name
 puts "What is your first name?"
 first_name = gets.chomp 
@@ -14,17 +15,15 @@ first_name = gets.chomp
 puts "What is your last name?"
 last_name = gets.chomp
 
-full_name = [
-first_name,
-last_name
-]
+full_name = [first_name, last_name]
+p name_array 
 
-puts full_name 
-
-# name_array = first_name.split 
+full_name[0], full_name[1] = full_name[1], full_name[0]
+puts full_name  
+# attempt 3: first_name, last_name = last_name, first_name 
 
 
-# swap_name = last_name, first_name.gsub(first_name, last_name) 
+# attempt 1: swap_name = last_name, first_name.gsub(first_name, last_name) 
 # puts "Swapped name is #{swap_name}!"  
 
 
