@@ -25,15 +25,16 @@ while answer == true
 
 puts "Your fake name is #{fake_name}!" 
 
-puts "Would you like to create another fake name?(yes/no)"
+puts "Would you like to create another fake name?"
+puts "If yes, type yes. Otherwise, type quit!"
 answer = gets.chomp
-	if answer == "yes"
-	   answer = true
-	elsif answer == "no"
-		answer = false
-		break
+  if answer == "yes"
+	answer = true
+  elsif answer == "quit"
+	answer = false
+	break
  
-end
+	end
 end 
 
 puts "Thank you for using the fake name generator!"
