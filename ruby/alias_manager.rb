@@ -5,11 +5,13 @@
 
 #Greet the user
 puts "Welcome to the fake name generator!"
-puts "Would you like to create a fake name?"
  
+answer = true
+while answer == true 
+
 #Ask user for a name
-def fake_name 
-	puts "Please enter a first name!"
+  def fake_name 
+    puts "Please enter a first name!"
 	first_name = gets.chomp
 	new_first_name = first_name.reverse
 	more_new = new_first_name.chomp
@@ -19,10 +21,23 @@ def fake_name
 	new_last_name = last_name.reverse
 	full_name = new_last_name + " " + new_first_name
 			
+  end 
+
+puts "Your fake name is #{fake_name}!" 
+
+puts "Would you like to create another fake name?(yes/no)"
+answer = gets.chomp
+	if answer == "yes"
+	   answer = true
+	elsif answer == "no"
+		answer = false
+		break
+ 
+end
 end 
 
-puts "Your fake name is #{fake_name}!"
-
+puts "Thank you for using the fake name generator!"
+puts "Goodbye!"
 
 
 
