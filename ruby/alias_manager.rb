@@ -2,7 +2,7 @@
 #Release 0: Attempt a tricky algorithm. 
 
 #Define an empty array to store user information.
-fake_name = {}
+# fake_name = {}
 
 #Greet the user
 puts "Welcome to the fake name generator!"
@@ -14,19 +14,19 @@ while answer == true
   def create_fake_name 
     puts "Please enter a first name!"
 	first_name = gets.chomp
-	fake_name[:original_fn] = first_name
+	# fake_name[:original_fn] = first_name
 	new_first_name = first_name.reverse
-	fake_name[:new_fn] = new_first_name
+	# fake_name[:new_fn] = new_first_name
 	puts "Please enter a last name!"
 	last_name = gets.chomp
-	fake_name[:original_ln] = last_name
+	# fake_name[:original_ln] = last_name
 	new_last_name = last_name.reverse
-	fake_name[:new_las] = new_last_name
+	# fake_name[:new_ln] = new_last_name
 	full_name = new_last_name + " " + new_first_name
 			
   end 
 
-# puts "Your fake name is #{create_fake_name}!" 
+puts "Your fake name is #{create_fake_name}!" 
 
 puts "Would you like to create another fake name?"
 puts "If yes, type yes. Otherwise, type quit!"
@@ -40,8 +40,8 @@ answer = gets.chomp
 	end
 end 
 
-puts "#{fake_name[:original_fn] = first_name}" + " " + "fake_name[:original_ln] = last_name"
-"is also known as #{fake_name[:new_fn] = new_first_name}" + " " + "#{fake_name[:new_las] = new_last_name}!"
+# puts "#{fake_name[:original_fn]}" + " " + "#{fake_name[:original_ln]}"
+# "is also known as #{fake_name[:new_fn]}" + " " + "#{fake_name[:new_ln]}!"
 puts "Thank you for using the fake name generator!"
 puts "Goodbye!"
 
