@@ -1,7 +1,8 @@
 
 #Release 0: Attempt a tricky algorithm. 
 
-#Method that creats a fake name
+#Define an empty array to store user information.
+fake_name = {}
 
 #Greet the user
 puts "Welcome to the fake name generator!"
@@ -9,8 +10,8 @@ puts "Welcome to the fake name generator!"
 answer = true
 while answer == true 
 
-#Ask user for a name
-  def fake_name 
+#Method that creates a fake name
+  def create_fake_name 
     puts "Please enter a first name!"
 	first_name = gets.chomp
 	new_first_name = first_name.reverse
@@ -23,7 +24,7 @@ while answer == true
 			
   end 
 
-puts "Your fake name is #{fake_name}!" 
+# puts "Your fake name is #{fake_name}!" 
 
 puts "Would you like to create another fake name?"
 puts "If yes, type yes. Otherwise, type quit!"
