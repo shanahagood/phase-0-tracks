@@ -40,6 +40,8 @@ answer = gets.chomp
 	end
 end 
 
+puts "#{fake_name[:original_fn] = first_name}" + " " + "fake_name[:original_ln] = last_name"
+"is also known as #{fake_name[:new_fn] = new_first_name}" + " " + "#{fake_name[:new_las] = new_last_name}!"
 puts "Thank you for using the fake name generator!"
 puts "Goodbye!"
 
