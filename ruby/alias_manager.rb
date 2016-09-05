@@ -14,17 +14,19 @@ while answer == true
   def create_fake_name 
     puts "Please enter a first name!"
 	first_name = gets.chomp
+	fake_name[:original_fn] = first_name
 	new_first_name = first_name.reverse
-	more_new = new_first_name.chomp
-	more_new 
+	fake_name[:new_fn] = new_first_name
 	puts "Please enter a last name!"
 	last_name = gets.chomp
+	fake_name[:original_ln] = last_name
 	new_last_name = last_name.reverse
+	fake_name[:new_las] = new_last_name
 	full_name = new_last_name + " " + new_first_name
 			
   end 
 
-# puts "Your fake name is #{fake_name}!" 
+# puts "Your fake name is #{create_fake_name}!" 
 
 puts "Would you like to create another fake name?"
 puts "If yes, type yes. Otherwise, type quit!"
