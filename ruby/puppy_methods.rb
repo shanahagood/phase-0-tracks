@@ -9,8 +9,18 @@ class Puppy
   	puts "Woof" * int
   end 
 
+  def rollover
+  	puts "*rolls over*"
+  end
+
+  def human_to_dogyrs(int)
+  	4 * int 
+  end 
+
 end
 
 puppy = Puppy.new
 puts puppy.fetch("stick")
 puts puppy.speak(3)
+puts puppy.rollover
+puts puppy.human_to_dogyrs(10)
