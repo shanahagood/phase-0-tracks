@@ -33,6 +33,9 @@ puts puppy.rollover
 puts puppy.human_to_dogyrs(10)
 puts puppy.play_dead
 
+
+
+
 class Cat
   def initialize 
   	puts "Initializing new cat instance...!"
@@ -48,8 +51,11 @@ class Cat
 
 end
 
-cat = Cat.new
-puts cat.human_to_catyrs(25)
-puts cat.purr
- 
+50.times do 
+
+  cat = Cat.new
+  puts cat.human_to_catyrs(25)
+  puts cat.purr
+
+end 
 
