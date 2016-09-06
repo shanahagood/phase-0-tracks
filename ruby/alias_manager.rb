@@ -1,5 +1,4 @@
-
-#Release 0: Attempt a tricky algorithm. 
+ 
 
 #Define an empty array to store user information.
 # fake_name = {}
@@ -45,10 +44,15 @@ end
 puts "Thank you for using the fake name generator!"
 puts "Goodbye!"
 
+#NOTES: I could not successfully get the program to store the user information (my attempts are the parts that
+#have been commented out). I suspect because I defined 
+# the variabls locally. I tried seeing if there's a way to access the local variables globally but nothing I
+#tried worked. I tried to define the variables globally but it messed with other parts of my program and 
+#wouldn't print properly. 
 
 
 
-
+#Release 0: Attempt a tricky algorithm.
 
 
 #Method that creates a fake name
