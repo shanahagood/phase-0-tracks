@@ -51,11 +51,17 @@ class Cat
 
 end
 
-50.times do 
+cat_array = []
 
-  cat = Cat.new
+50.times do 
+# accounts = 100.times.collect { BankAccount.new(100) }
+
+  # cat = 50.times.collect { Cat.new(50) }
+  cat = Cat.new 
   puts cat.human_to_catyrs(25)
   puts cat.purr
-
+  # cat_array[cat.human_to_catyrs, cat.purr] = cat 
+  # cat_array << [cat.human_to_catyrs, cat.purr]
+  # cat_array << Cat.new
 end 
 
