@@ -32,3 +32,24 @@ puts puppy.speak(3)
 puts puppy.rollover
 puts puppy.human_to_dogyrs(10)
 puts puppy.play_dead
+
+class Cat
+  def initialize 
+  	puts "Initializing new cat instance...!"
+  end 
+
+  def human_to_catyrs(int)
+  	4 * int
+  end 
+
+  def purr
+  	puts "*cat purrs*"
+  end 
+
+end
+
+cat = Cat.new
+puts cat.human_to_catyrs(25)
+puts cat.purr
+ 
+
