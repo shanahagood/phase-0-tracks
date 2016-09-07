@@ -23,7 +23,7 @@ end
 
 
 
-santa = Santa.new
+santa = Santa.new("female", "black")
 santa.speak
 santa.eat_milk_and_cookies("snickerdoodle")
 
