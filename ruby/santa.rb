@@ -14,10 +14,14 @@ class Santa
   	puts "That was a good #{cookie_type}!"
   end 
 
-@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", 
-  "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+  def ranking
+	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", 
+  	"Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+  end 
 
-@age = 0
+  def age
+	@age = 0
+  end 
 
 end
 
