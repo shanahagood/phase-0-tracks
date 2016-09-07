@@ -19,15 +19,23 @@ class Santa
   	"Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
   end 
 
-  def age
-	@age = 0
+#getter method for age attribute
+  def age(num)
+	@age = num
   end 
-
+#getter method for celebrate birthday. 
+#Adds 1 to age
+  def celebrate_birthday
+	@age += 1 
+  end 
 end
 
 
 
-santa = Santa.new("female", "black")
+santa = Santa.new("female", "black",)
 santa.speak
 santa.eat_milk_and_cookies("snickerdoodle")
+santa.age(18)
+# puts santa.age(18)
+santa.celebrate_birthday 
 
