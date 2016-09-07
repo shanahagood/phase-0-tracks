@@ -53,15 +53,21 @@ end
 
 cat_array = []
 
-50.times do 
-# accounts = 100.times.collect { BankAccount.new(100) }
+  50.times do 
+    cat = Cat.new 
+    cat_array << cat 
+  end 
+  p cat_array
 
-  # cat = 50.times.collect { Cat.new(50) }
-  cat = Cat.new 
-  puts cat.human_to_catyrs(25)
-  puts cat.purr
+  cat_array.each do |cat|
+    cat.purr
+    cat.human_to_catyrs(3)
+  end 
+
+  
+  # puts cat.human_to_catyrs(25)
+  # puts cat.purr
   # cat_array[cat.human_to_catyrs, cat.purr] = cat 
   # cat_array << [cat.human_to_catyrs, cat.purr]
   # cat_array << Cat.new
-end 
 
