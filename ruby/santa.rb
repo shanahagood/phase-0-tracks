@@ -26,6 +26,11 @@ class Santa
     @ethnicity
   end 
 
+ #setter method for age 
+  def age=(new_age)  
+    @age = new_age
+  end 
+
   def celebrate_birthday
 	@age += 1 
   end 
