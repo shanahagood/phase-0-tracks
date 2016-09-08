@@ -5,6 +5,7 @@ class Santa
   	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", 
   	"Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
     @age = age
+    @ethnicity = ethnicity
   end 
 
   def speak
@@ -19,15 +20,17 @@ class Santa
   def age
 	  @age
   end 
-#getter method for celebrate birthday. 
-#Adds 1 to age
+
+  #getter method for ethnicity
+  def ethnicity
+    @ethnicity
+  end 
+
   def celebrate_birthday
 	@age += 1 
   end 
 
-  def ethnicity(race)
-  @ethnicity = race
-  end
+  
 #moves reindeer name to last place
   def get_mad_at(deer_name)
     @reindeer_ranking.delete(deer_name) 
@@ -47,6 +50,6 @@ santa.speak
 santa.eat_milk_and_cookies("snickerdoodle")
 santa.age = 18
 santa.celebrate_birthday 
-santa.ethnicity("Black") 
+santa.ethnicity = "Black" 
 p santa.get_mad_at("Vixen")
 p santa.gender = "female"
