@@ -9,7 +9,7 @@ class Santa
   	puts "Initializing Santa instance...!" 
   	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", 
   	"Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-    @age = age(0..140)
+    @age = rand(0..140)
     @ethnicity = ethnicity
     @gender = gender
   end 
