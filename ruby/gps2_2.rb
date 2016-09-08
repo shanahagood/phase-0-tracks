@@ -16,9 +16,9 @@
 # output: print a message showing updated cart
 
 # Method to update the quantity of an item
-# input:
-# steps:
-# output:
+# input: enter item
+# steps: display item and quantity 
+# output: print a message showing updated cart
 
 # Method to print a list and make it look pretty
 # input:
