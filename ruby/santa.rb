@@ -1,7 +1,8 @@
 class Santa
 
 #makes a (getter) method readable.
-  attr_reader :age, :ethnicity
+  # attr_reader :age, :ethnicity
+  attr_accessor :age, :ethnicity 
 
   def initialize
   	puts "Initializing Santa instance...!" 
@@ -29,15 +30,15 @@ class Santa
 #     @ethnicity
 #   end 
 
- #setter method for age 
-  def age=(new_age)  
-    @age = new_age
-  end 
+ # #setter method for age 
+ #  def age=(new_age)  
+ #    @age = new_age
+ #  end 
 
-  #setter method for ethnicity 
-  def ethnicity=(new_ethnic)
-    @ethnicity = new_ethnic
-  end 
+  # #setter method for ethnicity 
+  # def ethnicity=(new_ethnic)
+  #   @ethnicity = new_ethnic
+  # end 
 
   #setter method for gender 
   def gender=(new_gender)
