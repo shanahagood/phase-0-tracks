@@ -4,6 +4,7 @@ class Santa
   	puts "Initializing Santa instance...!" 
   	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", 
   	"Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+    @age = age
   end 
 
   def speak
@@ -15,8 +16,8 @@ class Santa
   end 
 
 #getter method for age attribute
-  def age(num)
-	@age = num
+  def age
+	  @age
   end 
 #getter method for celebrate birthday. 
 #Adds 1 to age
@@ -44,7 +45,7 @@ end
 santa = Santa.new
 santa.speak
 santa.eat_milk_and_cookies("snickerdoodle")
-santa.age(18)
+santa.age = 18
 santa.celebrate_birthday 
 santa.ethnicity("Black") 
 p santa.get_mad_at("Vixen")
