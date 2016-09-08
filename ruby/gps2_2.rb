@@ -21,6 +21,6 @@
 # output: print a message showing updated cart
 
 # Method to print a list and make it look pretty
-# input:
-# steps:
-# output:
+# input: acquire shopping cart (hash)
+# steps: iterate through each item in hash and print the key and values
+# output: print entire cart (hash)
