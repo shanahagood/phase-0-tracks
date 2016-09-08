@@ -2,7 +2,7 @@ class Santa
 
 #makes a (getter) method readable.
   # attr_reader :age, :ethnicity
-  attr_accessor :age, :ethnicity 
+  attr_accessor :age, :ethnicity, :gender 
 
   def initialize
   	puts "Initializing Santa instance...!" 
@@ -40,11 +40,11 @@ class Santa
   #   @ethnicity = new_ethnic
   # end 
 
-  #setter method for gender 
-  def gender=(new_gender)
-    @gender = new_gender
-    puts "Santa's gender is #{new_gender}!"
-  end 
+  # #setter method for gender 
+  # def gender=(new_gender)
+  #   @gender = new_gender
+  #   puts "Santa's gender is #{new_gender}!"
+  # end 
 
   def celebrate_birthday
   @age += 1 
@@ -64,6 +64,6 @@ santa.speak
 santa.eat_milk_and_cookies("snickerdoodle")
 santa.age = 18
 p santa.celebrate_birthday 
-santa.ethnicity = "Black" 
+santa.ethnicity = "Asian" 
 p santa.get_mad_at("Vixen")
-p santa.gender = "female"
+p santa.gender = "gender fluid"
