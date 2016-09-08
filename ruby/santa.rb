@@ -2,14 +2,16 @@ class Santa
 
 #makes a (getter) method readable.
   # attr_reader :age, :ethnicity
+#makesa  method readable and writeable. 
   attr_accessor :age, :ethnicity, :gender 
 
-  def initialize
+  def initialize(gender, ethnicity)
   	puts "Initializing Santa instance...!" 
   	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", 
   	"Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
     @age = age
     @ethnicity = ethnicity
+    @gender = gender
   end 
 
   def speak
@@ -66,12 +68,21 @@ example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer n
 
 santas = []
 
+puts "Printing information for new Santas...!"
+example_genders.length.times do
+  new_santa = Santa.new(example_genders.sample, example_ethnicities.sample)
+  puts "Gender: #{example_genders.sample}"
+  puts "Ethnicity: #{example_ethnicities.sample}" 
+  puts "Age: #{new_santa.age}!"
+  santas << new_santa
+  puts "---"
+end
 
-santa = Santa.new
-santa.speak
-santa.eat_milk_and_cookies("snickerdoodle")
-santa.age = 18
-santa.celebrate_birthday 
-santa.ethnicity = "Asian" 
-santa.get_mad_at("Vixen")
-santa.gender = "gender fluid"
+# santa = Santa.new
+# santa.speak
+# santa.eat_milk_and_cookies("snickerdoodle")
+# santa.age = 18
+# santa.celebrate_birthday 
+# santa.ethnicity = "Asian" 
+# santa.get_mad_at("Vixen")
+# santa.gender = "gender fluid"
