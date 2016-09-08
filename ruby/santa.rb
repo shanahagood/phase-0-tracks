@@ -15,15 +15,15 @@ class Santa
   end 
 
   def speak
-    puts "Ho, ho, ho! Haaaappy holidays!"
+    puts "Santa says: Ho, ho, ho! Haaaappy holidays!"
   end
 
   def eat_milk_and_cookies(cookie_type)
-  	puts "That was a good #{cookie_type}!"
+  	puts "Santa says: Om nom nom! That was a good #{cookie_type} cookie!"
   end 
 
   def celebrate_birthday
-  @age += 1 
+    @age += 1 
   end 
 
 #moves reindeer name to last place
@@ -52,6 +52,15 @@ example_genders.length.times do
   puts "---"
 end
 
+puts "Testing each instance to make sure Santas can perform actions..."
+santas.each do |santa|
+  santa.speak 
+  santa.eat_milk_and_cookies("chocolate chip oatmeal raisin")
+  puts "Today I'm"
+  puts santa.celebrate_birthday
+  santa.get_mad_at("Donner")
+  puts "---"
+end 
 
 # #getter method for age attribute
 #   def age
