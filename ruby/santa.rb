@@ -1,5 +1,8 @@
 class Santa
 
+#makes a (getter) method readable.
+  attr_reader :age, :ethnicity
+
   def initialize
   	puts "Initializing Santa instance...!" 
   	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", 
@@ -16,15 +19,15 @@ class Santa
   	puts "That was a good #{cookie_type}!"
   end 
 
-#getter method for age attribute
-  def age
-	  @age
-  end 
+# #getter method for age attribute
+#   def age
+# 	  @age
+#   end 
 
-  #getter method for ethnicity
-  def ethnicity
-    @ethnicity
-  end 
+#   #getter method for ethnicity
+#   def ethnicity
+#     @ethnicity
+#   end 
 
  #setter method for age 
   def age=(new_age)  
@@ -43,10 +46,9 @@ class Santa
   end 
 
   def celebrate_birthday
-	@age += 1 
+  @age += 1 
   end 
 
-  
 #moves reindeer name to last place
   def get_mad_at(deer_name)
     @reindeer_ranking.delete(deer_name) 
@@ -60,7 +62,7 @@ santa = Santa.new
 santa.speak
 santa.eat_milk_and_cookies("snickerdoodle")
 santa.age = 18
-santa.celebrate_birthday 
+p santa.celebrate_birthday 
 santa.ethnicity = "Black" 
 p santa.get_mad_at("Vixen")
 p santa.gender = "female"
