@@ -36,6 +36,12 @@ class Santa
     @ethnicity = new_ethnic
   end 
 
+  #setter method for gender 
+  def gender=(new_gender)
+    @gender = new_gender
+    puts "Santa's gender is #{new_gender}!"
+  end 
+
   def celebrate_birthday
 	@age += 1 
   end 
@@ -45,11 +51,6 @@ class Santa
   def get_mad_at(deer_name)
     @reindeer_ranking.delete(deer_name) 
     @reindeer_ranking.push(deer_name)
-  end 
-
-#Allows Santa's gender to be changed
-  def gender=(new_gender)
-    @gender = new_gender
   end 
 
 end  
