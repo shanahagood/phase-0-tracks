@@ -59,6 +59,13 @@ class Santa
 
 end  
 
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", 
+  "N/A", "transgender", "androgynous", "genderqueer", "nonbinary"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", 
+  "Mystical Creature (unicorn)", "N/A", "Asian", "Irish", "Japanese", "French", "Italian"]
+
+santas = []
+
 
 santa = Santa.new
 santa.speak
