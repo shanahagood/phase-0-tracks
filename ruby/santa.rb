@@ -1,8 +1,7 @@
 class Santa
 
-  def initialize(gender) 
-  	puts "Initializing Santa instance...!"
-  	@gender = gender 
+  def initialize
+  	puts "Initializing Santa instance...!" 
   	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", 
   	"Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
   end 
@@ -24,36 +23,29 @@ class Santa
   def celebrate_birthday
 	@age += 1 
   end 
-#moves reindeer name to bottom of ranking
-  #perhaps figure out the index 
 
-  # def reindeer(deer_name)
-  # 	@reindeer = deer_name
-  # end 
-
-#   def get_mad_at(deer_name)
-#   	@deer_name = @reindeer_ranking
-#   end 
-
-  def reindeer(deer_name)
-   	@reindeer = deer_name
-   end 
-
+  def ethnicity(race)
+  @ethnicity = race
+  end
+#moves reindeer name to last place
   def get_mad_at(deer_name)
     @reindeer_ranking.delete(deer_name) 
     @reindeer_ranking.push(deer_name)
   end 
 
-  def ethnicity(race)
-	@ethnicity = race
-  end
+#Allows Santa's gender to be changed
+  def gender=(new_gender)
+    @gender = new_gender
+  end 
+
 end  
 
 
-santa = Santa.new("female")
+santa = Santa.new
 santa.speak
 santa.eat_milk_and_cookies("snickerdoodle")
 santa.age(18)
 santa.celebrate_birthday 
 santa.ethnicity("Black") 
 p santa.get_mad_at("Vixen")
+p santa.gender = "female"
