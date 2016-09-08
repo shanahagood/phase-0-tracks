@@ -11,9 +11,9 @@
 # output: print a message that confirms the item and quantity
 
 # Method to remove an item from the list
-# input:
-# steps:
-# output:
+# input: item name.delete 
+# steps: delete target item
+# output: print a message showing updated cart
 
 # Method to update the quantity of an item
 # input:
