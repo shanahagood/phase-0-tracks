@@ -22,32 +22,6 @@ class Santa
   	puts "That was a good #{cookie_type}!"
   end 
 
-# #getter method for age attribute
-#   def age
-# 	  @age
-#   end 
-
-#   #getter method for ethnicity
-#   def ethnicity
-#     @ethnicity
-#   end 
-
- # #setter method for age 
- #  def age=(new_age)  
- #    @age = new_age
- #  end 
-
-  # #setter method for ethnicity 
-  # def ethnicity=(new_ethnic)
-  #   @ethnicity = new_ethnic
-  # end 
-
-  # #setter method for gender 
-  # def gender=(new_gender)
-  #   @gender = new_gender
-  #   puts "Santa's gender is #{new_gender}!"
-  # end 
-
   def celebrate_birthday
   @age += 1 
   end 
@@ -77,6 +51,33 @@ example_genders.length.times do
   santas << new_santa
   puts "---"
 end
+
+
+# #getter method for age attribute
+#   def age
+#     @age
+#   end 
+
+#   #getter method for ethnicity
+#   def ethnicity
+#     @ethnicity
+#   end 
+
+ # #setter method for age 
+ #  def age=(new_age)  
+ #    @age = new_age
+ #  end 
+
+  # #setter method for ethnicity 
+  # def ethnicity=(new_ethnic)
+  #   @ethnicity = new_ethnic
+  # end 
+
+  # #setter method for gender 
+  # def gender=(new_gender)
+  #   @gender = new_gender
+  #   puts "Santa's gender is #{new_gender}!"
+  # end 
 
 # santa = Santa.new
 # santa.speak
