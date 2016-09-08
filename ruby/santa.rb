@@ -54,6 +54,7 @@ class Santa
   def get_mad_at(deer_name)
     @reindeer_ranking.delete(deer_name) 
     @reindeer_ranking.push(deer_name)
+    puts "Santa is mad at #{deer_name}!"
   end 
 
 end  
@@ -63,7 +64,7 @@ santa = Santa.new
 santa.speak
 santa.eat_milk_and_cookies("snickerdoodle")
 santa.age = 18
-p santa.celebrate_birthday 
+santa.celebrate_birthday 
 santa.ethnicity = "Asian" 
-p santa.get_mad_at("Vixen")
-p santa.gender = "gender fluid"
+santa.get_mad_at("Vixen")
+santa.gender = "gender fluid"
