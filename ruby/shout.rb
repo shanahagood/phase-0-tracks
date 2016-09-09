@@ -1,10 +1,10 @@
 module Shout
-  def self.yell_angrily(words)
-    words + "!!!" + " :("
+  def yell_angrily(words)
+    puts words + "!!!" + " :("
   end
 
-  def self.yell_happily(words)
-  	words + "!!!" + " :D"
+  def yell_happily(words)
+  	puts words + "!!!" + " :D"
   end 
 end
 
@@ -20,9 +20,9 @@ class Foreman
 end 
 
 umpire = Umpire.new
-umpire.self.yell_angrily("You're out")
-umpire.self.yell_happily("Safe!")
+umpire.yell_angrily("You're out")
+umpire.yell_happily("Safe!")
 
 foreman = Foreman.new
-foreman.self.yell_angrily("Faster")
-foreman.self.yell_happily("Excellent job, men")
+foreman.yell_angrily("Faster")
+foreman.yell_happily("Excellent job, men")
