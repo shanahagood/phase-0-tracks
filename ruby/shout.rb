@@ -8,5 +8,13 @@ module Shout
   end 
 end
 
-Shout.self.yell_angrily("I'm so angry")
-Shout.self.yell_happily("I'm so happy")
+# Shout.self.yell_angrily("I'm so angry")
+# Shout.self.yell_happily("I'm so happy")
+ 
+class Umpire
+  include Shout
+end 
+
+class Foreman
+  include Shout
+end 
