@@ -18,3 +18,11 @@ end
 class Foreman
   include Shout
 end 
+
+umpire = Umpire.new
+umpire.self.yell_angrily("You're out")
+umpire.self.yell_happily("Safe!")
+
+foreman = Foreman.new
+foreman.self.yell_angrily("Faster")
+foreman.self.yell_happily("Excellent job, men")
