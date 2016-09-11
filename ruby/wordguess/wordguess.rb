@@ -1,12 +1,19 @@
 #Word guessing-game pseudo 
 #----
 #Define a class for the game 
+class Wordguess
 #  -Set a readable attribute for "guess count"
+  attr_reader :guess_count
 #  -Set a readable attribute for "game over".
+  attr_reader :game_over 
 #Define initialize method to start the game 
 #  -"guess count" is equal to 0
 #  -"game over" is false
 #End method
+  def initiliaze
+  	@guess_count = 0
+  	@game_over = false
+  end
 #Define method where guesses are limited to the length of the word
 #  -"guess count" plus equals 1 
 #  -If "guess count" is equal to "word" length:
