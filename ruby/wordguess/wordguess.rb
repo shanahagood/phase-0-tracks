@@ -1,50 +1,92 @@
- 
-class Wordguess
-  attr_reader :guess_count, :game_over
-  attr_writer :secret_word  
-  def initiliaze
-  	@guess_count = 0
-  	@game_over = false
-  	@secret_word = secret_word
-  end
-  def guess_count
-  	@guess_count += 1
-  	if @guess_count == @secret_word.length
-  	  @game_over = true
-  	else 
-  	  @game_over = false
-end 
- 
 puts "Welcome to the Word Guess game!"
-game = Wordguess.new 
-puts "User 1, please enter a secret word!"
+# game = Wordguess.new 
+puts "Player 1, please enter a secret word"
 secret_word = gets.chomp
 secret_word.split('')
-user_guesses = []
+puts user_guesses = []
 
-while game.game_over == false
-  puts "User 2, Guess the secret word! Please enter in a letter!"
+# game_over = false
+remaining_guesses = secret_word.length
+
+puts "Player 2, guess the secret word!"
+
+# count = 0
+#  if count = secret_word.length 
+#   game_over = true
+#  else 
+  # game_over = false
+#   count += 1
+# end 
+
+game_over = false 
+
+while game_over == false
+remaining_guesses -= 1
+# already_guessed = false 
+  puts "Please enter in a letter!"
   letter_guess = gets.chomp
-
-  def remaining_guesses(num)
-    num -= 1
-  end 
-
-  if game.secret_word.include?(letter_guess)
-    puts "Your guess was correct!"
-    puts "You have #{remaining_guesses} left!"
-    user_guesses << letter_guess
-    puts user_guesses
-  else
-    puts "Incorrect! Try again!"
-    puts "You have #{remaining_guesses} left!"
-    puts user_guesses
-  end 
-break if game.game_over == true 
-
-end
+    if secret_word.include?(letter_guess)
+      puts "Your guess was correct! Keep going!"
+      puts "You have #{remaining_guesses} guesses remaining!"
+      user_guesses << letter_guess 
+      puts user_guesses
+    else
+      puts "Sorry, but you guessed wrong. Try again!"
+      puts "You have #{remaining_guesses} guesses remaining!"
+      puts user_guesses 
+    end
+    
+# break if game_over == true  
 end 
-end 
+
+#attempts 
+# class Wordguess
+#   attr_reader :guess_count, :game_over
+#   attr_writer :secret_word  
+#   def initiliaze
+#   	@guess_count = 0
+#   	@game_over = false
+#   	@secret_word = secret_word
+#   end
+#   def guess_count
+#   	@guess_count += 1
+#   	if @guess_count == @secret_word.length
+#   	  @game_over = true
+#   	else 
+#   	  @game_over = false
+# end 
+ 
+# puts "Welcome to the Word Guess game!"
+# game = Wordguess.new 
+# puts "User 1, please enter a secret word!"
+# secret_word = gets.chomp
+# secret_word.split('')
+# user_guesses = []
+
+# while game.game_over == false
+#   puts "User 2, Guess the secret word! Please enter in a letter!"
+#   letter_guess = gets.chomp
+
+#   def remaining_guesses(num)
+#     num -= 1
+#   end 
+
+#   if game.secret_word.include?(letter_guess)
+#     puts "Your guess was correct!"
+#     puts "You have #{remaining_guesses} left!"
+#     user_guesses << letter_guess
+#     puts user_guesses
+#   else
+#     puts "Incorrect! Try again!"
+#     puts "You have #{remaining_guesses} left!"
+#     puts user_guesses
+#   end 
+# break if game.game_over == true 
+
+# end
+# end 
+# end 
+#-------
 #Word guessing-game pseudo 
 #----
 #Define a class for the game 
