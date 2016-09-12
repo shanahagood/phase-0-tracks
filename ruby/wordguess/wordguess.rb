@@ -1,19 +1,59 @@
+ 
+class Wordguess
+  attr_reader :guess_count, :game_over
+  attr_writer :secret_word  
+  def initiliaze
+  	@guess_count = 0
+  	@game_over = false
+  	@secret_word = secret_word
+  end
+  def guess_count
+  	@guess_count += 1
+  	if @guess_count == @secret_word.length
+  	  @game_over = true
+  	else 
+  	  @game_over = false
+end 
+ 
+puts "Welcome to the Word Guess game!"
+game = Wordguess.new 
+puts "User 1, please enter a secret word!"
+secret_word = gets.chomp
+secret_word.split('')
+user_guesses = []
+
+while game.game_over == false
+  puts "User 2, Guess the secret word! Please enter in a letter!"
+  letter_guess = gets.chomp
+
+  def remaining_guesses(num)
+    num -= 1
+  end 
+
+  if game.secret_word.include?(letter_guess)
+    puts "Your guess was correct!"
+    puts "You have #{remaining_guesses} left!"
+    user_guesses << letter_guess
+    puts user_guesses
+  else
+    puts "Incorrect! Try again!"
+    puts "You have #{remaining_guesses} left!"
+    puts user_guesses
+  end 
+break if game.game_over == true 
+
+end
+end 
+end 
 #Word guessing-game pseudo 
 #----
 #Define a class for the game 
-class Wordguess
 #  -Set a readable attribute for "guess count"
-  attr_reader :guess_count
 #  -Set a readable attribute for "game over".
-  attr_reader :game_over 
 #Define initialize method to start the game 
 #  -"guess count" is equal to 0
 #  -"game over" is false
 #End method
-  def initiliaze
-  	@guess_count = 0
-  	@game_over = false
-  end
 #Define method where guesses are limited to the length of the word
 #  -"guess count" plus equals 1 
 #  -If "guess count" is equal to "word" length:
