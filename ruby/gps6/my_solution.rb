@@ -4,6 +4,9 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
+#require_relative calls file within same directory while require 
+# needs the path of the file being called. require also can call 
+# modules while require_relative only can call files 
 require_relative 'state_data'
 
 class VirusPredictor
@@ -99,5 +102,20 @@ end
 #=======================================================================
 # Reflection Section
 
-#=======================================================================
-# Reflection Section
+#1. What are the differences between the two different hash syntaxes shown in the state_data file?
+#One hash syntax contains values and keys, while the other holds the data of all the different hashes.
+
+#2. What does require_relative do? How is it different from require?
+#require_relative calls file within same directory while require 
+# needs the path of the file being called. require can also call 
+# modules while require_relative can only call files. 
+
+#3. What are some ways to iterate through a hash?
+#You can iterate through a hash using the .each method or .times method. 
+
+#4. When refactoring virus_effects, what stood out to you about the variables, if anything?
+#State was being called in the method but it was unneccesary because when the STATE_DATA instance is called, 
+#it accesses the data for each state since we instructed the method to do so. 
+
+# What concept did you most solidify in this challenge?
+#I think I got a better idea of how the flow is arranged when creating methods in classes and how block methods function. 
