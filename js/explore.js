@@ -12,31 +12,32 @@
 //Split string into an array.
 var string = "love"; {
 var str_array = string.split("");
+// str_array.sort();
+// console.log(str_array);
 console.log(str_array);
 }
 
-//For each letter in the array:
-//	find the current index
-// for ()
+//For each letter in the array, find the current index
+//count = 0
+//while count is less than the array length:
+//	count is equal to count plus one.  
+//  return array index.
+// for (var i = 0; i < str_array.length; i++){
+// 	console.log(str_array[i])
+// }
+
+//Sort array index in order from largest to smallest.
+str_array.sort();
+console.log(str_array);
+
 // string.indexOf("o");
 
-// function 
+// function code 
 // function reverseString(string) {
 // var str_array = string.split("");
 // console.log(str_array);
 // }
-
+// string = [5, 4, 3, 2, 1];
+// string.sort();
+// console.log(string);
 // console.log(reverseString("love"));
-
-
-//Arrange index number from highest to lowest. 
-  
-
-// function reverseString(string) { 
-// 	string.split(); 
-// 	return string;
-// }
-
-// console.log(reverseString("love"));
-
-
