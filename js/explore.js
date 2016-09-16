@@ -13,11 +13,16 @@
 //	find the current index
 //Arrange index number from highest to lowest. 
   
+var string = "love";
+new_string = string.split("");
+console.log(new_string);
 
 
-function reverseString(string) {
-	return string;
-}
+// function reverseString(string) { 
+// 	string.split(); 
+// 	return string;
+// }
 
+// console.log(reverseString("love"));
 
 
