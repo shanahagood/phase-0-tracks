@@ -8,15 +8,29 @@
 //  we want the index to read from highest to lowest.
 // 1, 2, 3, 4, 5 needs to become 5, 4, 3, 2, 1
 
+
 //Split string into an array.
+var string = "love"; {
+var str_array = string.split("");
+console.log(str_array);
+}
+
 //For each letter in the array:
 //	find the current index
+// for ()
+// string.indexOf("o");
+
+// function 
+// function reverseString(string) {
+// var str_array = string.split("");
+// console.log(str_array);
+// }
+
+// console.log(reverseString("love"));
+
+
 //Arrange index number from highest to lowest. 
   
-var string = "love";
-new_string = string.split("");
-console.log(new_string);
-
 
 // function reverseString(string) { 
 // 	string.split(); 
