@@ -26,7 +26,7 @@
 var string = "love"; 
 var str_array = string.split("");
 for (var index = 0; index < str_array.length; index++){
-	console.log(str_array[index]);
+	console.log(index);
 }
 // --------------------------------------------------------------
 //Sort array index in order from largest to smallest.
