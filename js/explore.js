@@ -28,21 +28,29 @@ var str_array = string.split("");
 for (var index = 0; index < str_array.length; index++){
 	console.log(index);
 }
+
+// index.sort();
+// console.log(str_array);
 // --------------------------------------------------------------
 //Sort array index in order from largest to smallest.
 // str_array.sort();
 // console.log(str_array);
 
-// string.indexOf("o");
 
+
+//---------------------------------------------------------------
 // function code 
+
 // function reverseString(string) {
 // var str_array = string.split("");
 // console.log(str_array);
-// for (var i = 0; i < str_array.length; i++){
-// 	console.log(str_array[i]);
+// for (var index = 0; index < str_array.length; index++) {
+// 	console.log(index);
 // }
+
 // console.log(reverseString("love"));
+// reverseString("love");
+
 
 
 
