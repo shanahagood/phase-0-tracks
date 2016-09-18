@@ -19,10 +19,10 @@
 //Test method by calling "rtrn_longest_p" and designating an array as its argument.
 //
 
-function returnLongestPhrase(phrase1, phrase2, phrase3)
-for (var index = 0; index < phrase1.length; index++){
-	console.log(index);
-	}
+// function returnLongestPhrase(phrase1, phrase2, phrase3)
+// for (var index = 0; index < phrase1.length; index++){
+// 	console.log(index);
+// 	}
 // 	var newIndex = phraseArray.sort(function);
 // 	// if (newIndex){
 
@@ -40,4 +40,14 @@ for (var index = 0; index < phrase1.length; index++){
 // }
 
 // console.log(rtrnLongestPhrase(phraseArray));
+// ---------------------------------------------------
+//Release 1
+// write a function that takes two objects and checks to see if the objects share at 
+// least one key-value pair. If we called your function with {name: "Steven", age: 54} 
+// and {name: "Tamir", age: 54}, the function would return true, because at least one 
+// key-value pair matches between the two objects. If no pairs match (and keep in mind 
+// 	that the two objects may not even have any of the same keys), the function should 
+// return false. To make your life easier, don't worry about whether a property is a 
+// string ('age') or an identifier name (age). 
+
 
