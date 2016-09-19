@@ -19,11 +19,12 @@
 //Test method by calling "rtrn_longest_p" and designating an array as its argument.
 //
 
-function returnLongestPhrase(array)
-for (var index = 0; index < array.length; index++){
-	console.log(index);
-}
+// function returnLongestPhrase(array)
+// for (var index = 0; index < array.length; index++){
+// 	console.log(index);
+// }
 
+// console.log(returnLongestPhrase(["long phrase", "longest phrase", "longer phrase"]))
 
 // 	var newIndex = phraseArray.sort(function);
 // 	// if (newIndex){
@@ -65,5 +66,14 @@ for (var index = 0; index < array.length; index++){
 //	Else:
 //	  print "false"
 //
-//
-//	
+//------------------------------------------------------
+//	Release 2 
+// Write a function that takes an integer for length, and builds and returns an array of 
+// strings of the given length. So if we ran your function with an argument of 3, we would 
+// get an array of 3 random words back (the words don't have to be actual sensical English 
+// 	words -- "nnnnfph" totally counts). The words should be of randomly varying length, 
+// with a minimum of 1 letter and a maximum of 10 letters. (This involves a new trick, generating 
+// 	a random number, that you'll have to look up, but the solution on how to do so is relatively 
+// 	straightforward.)
+// Add driver code that does the following 10 times: generates an array, prints the array, feeds t
+// he array to your "longest word" function, and prints the result.
