@@ -18,6 +18,12 @@ console.log(str_array);
 	for (var index = 0; index < str_array.length; index++) {
 		   console.log(index);
 	  }
+//Sort array index in order from largest to smallest.
+	// str_array.sort();
+	// console.log(str_array);
+//NOTES: I THOUGHT I COULD USE SORT TO ARRANGE THE INDEX NUMBERS FROM LARGEST 
+//TO SMALLEST. HOWEVER, I DISCOVERED THIS ONLY ARRANGES CHARACTERS IN 
+//ALPHABETICAL ORDER SO I HAD TO TRY TO FIND ANOTHER WAY. 
 }
 
 //Use driver code to test function 
