@@ -32,32 +32,23 @@ console.log(str_array);
 	reversed[1] = str_array[2];
 	reversed[2] = str_array[1];
 	reversed[3] = str_array[0];
+
 //Check that the letters are being stored in the new array.	
 	console.log(reversed);
 //TRY TO REFACTOR CODE TO WORK ON ITS OWN INSTEAD OF INSERTING MANUAL INPUT.
 
 //create a loop that iterates through the old array
 //and prints the indeces backwards into the new array by subtracting indeces.
-	for (var index = reversed.length; index != 0; index--) {
-		reversed += reversed[index];
-	}
-	console.log(reversed)
+	// for (var index = reversed.length; index != 0; index--) {
+	// 	reversed += reversed[index];
+	// }
+	// console.log(reversed)
+//NOTES: THIS PRINTS THE INDECES BACKWARDS BUT NOT THE LETTERS. COULDN'T 
+//FIGURE OUT WHY.
 
 }
 
 //Use driver code to test function 
 console.log(reverseString("love"));
-
-//---------------------------------------------------------------
-// function code 
-
-// function reverseString(string) {
-//   var str_array = string.split("");
-//   console.log(str_array);
-//   for (var index = 0; index < str_array.length; index++) {
-// 	   console.log(index);
-//   }
-// }
-// console.log(reverseString("love"));
 
 
