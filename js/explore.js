@@ -24,18 +24,22 @@ console.log(str_array);
 //NOTES: I THOUGHT I COULD USE SORT TO ARRANGE THE INDEX NUMBERS FROM LARGEST 
 //TO SMALLEST. HOWEVER, I DISCOVERED THIS ONLY ARRANGES CHARACTERS IN 
 //ALPHABETICAL ORDER SO I HAD TO TRY TO FIND ANOTHER WAY. 
+
+//Create an empty array to store the reversed word
+	var reversed = [];
+//Push the letters into the new array: last index to first.
+	reversed[0] = str_array[3];
+	reversed[1] = str_array[2];
+	reversed[2] = str_array[1];
+	reversed[3] = str_array[0];
+//Check that the letters are being stored in the new array.	
+	console.log(reversed);
+
+
 }
 
 //Use driver code to test function 
 console.log(reverseString("love"));
-// index.sort();
-// console.log(str_array);
-// --------------------------------------------------------------
-//Sort array index in order from largest to smallest.
-// str_array.sort();
-// console.log(str_array);
-
-
 
 //---------------------------------------------------------------
 // function code 
@@ -47,14 +51,6 @@ console.log(reverseString("love"));
 // 	   console.log(index);
 //   }
 // }
-// console.log(reverseString("love"));
-
-
-
-
-// string = [5, 4, 3, 2, 1];
-// string.sort();
-// console.log(string);
 // console.log(reverseString("love"));
 
 
