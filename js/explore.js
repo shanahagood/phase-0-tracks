@@ -23,11 +23,11 @@
 //	count is equal to count plus one.  
 //  return array index.
 
-var string = "love"; 
-var str_array = string.split("");
-for (var index = 0; index < str_array.length; index++){
-	console.log(index);
-}
+// var string = "love"; 
+// var str_array = string.split("");
+// for (var index = 0; index < str_array.length; index++){
+// 	console.log(index);
+// }
 
 // index.sort();
 // console.log(str_array);
@@ -42,12 +42,12 @@ for (var index = 0; index < str_array.length; index++){
 // function code 
 
 // function reverseString(string) {
-// var str_array = string.split("");
-// console.log(str_array);
-// for (var index = 0; index < str_array.length; index++) {
-// 	console.log(index);
-// }
-
+//   var str_array = string.split("");
+//   console.log(str_array);
+//   for (var index = 0; index < str_array.length; index++) {
+// 	   console.log(index);
+//   }
+//}
 // console.log(reverseString("love"));
 // reverseString("love");
 
