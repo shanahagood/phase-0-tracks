@@ -1,34 +1,27 @@
-//define function called reverse that takes one string as an argument. 
-//example string: love => evol
-// first index becomes 4th/last index
-//2nd index becomes 3rd index
-//3rd index becomes 2nd index
-//4th index becomes 1st index
+
 //  The index reads from smallest to highest so now
 //  we want the index to read from highest to lowest.
 // 1, 2, 3, 4, 5 needs to become 5, 4, 3, 2, 1
 
-
+//PSEUDOCODE-----------------------------------------------------------
+//define function called reverse that takes one string as an argument. 
+function reverseString(string) {
 //Split string into an array.
-// var string = "love"; {
-// var str_array = string.split("");
-// str_array.sort();
-// console.log(str_array);
-// console.log(str_array);
-// }
-// __________________________________________________________
-//For each letter in the array, find the current index
-//count = 0
-//while count is less than the array length:
-//	count is equal to count plus one.  
+var str_array = string.split("");
+//Print the split array
+console.log(str_array);
+//For each letter in the array, find the index
+//index = 0
+//while index is less than the array length:
+//	index is equal to index plus one.  
 //  return array index.
+	for (var index = 0; index < str_array.length; index++) {
+		   console.log(index);
+	  }
+}
 
-// var string = "love"; 
-// var str_array = string.split("");
-// for (var index = 0; index < str_array.length; index++){
-// 	console.log(index);
-// }
-
+//Use driver code to test function 
+console.log(reverseString("love"));
 // index.sort();
 // console.log(str_array);
 // --------------------------------------------------------------
@@ -47,9 +40,8 @@
 //   for (var index = 0; index < str_array.length; index++) {
 // 	   console.log(index);
 //   }
-//}
+// }
 // console.log(reverseString("love"));
-// reverseString("love");
 
 
 
