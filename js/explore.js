@@ -34,7 +34,14 @@ console.log(str_array);
 	reversed[3] = str_array[0];
 //Check that the letters are being stored in the new array.	
 	console.log(reversed);
+//TRY TO REFACTOR CODE TO WORK ON ITS OWN INSTEAD OF INSERTING MANUAL INPUT.
 
+//create a loop that iterates through the old array
+//and prints the indeces backwards into the new array by subtracting indeces.
+	for (var index = reversed.length; index != 0; index--) {
+		reversed += reversed[index];
+	}
+	console.log(reversed)
 
 }
 
