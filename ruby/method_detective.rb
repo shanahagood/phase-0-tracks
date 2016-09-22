@@ -19,7 +19,7 @@
  "the usual".concat(" subjects")
 #=> "the usual suspects"
 
- # " suspects".???
+ " suspects".prepend("the usual")
 # => "the usual suspects"
 
  "The case of the disappearing last letter".chop
