@@ -1,11 +1,17 @@
 #PSEUDOCODE
 #--COMPUTER LOGIC--
 #"client info" is equal to empty hash. 
+client_info = {}
 #"client info""name" is equal to "client name"
+client_info[:name] = client_name
 #"client info""age" is equal to "client age"
+client_info[:age] = client_age
 #"client info""number of children" is equal to "client children"
+client_info[:number_of_children] = client_children
 #"client info""decor theme" is equal to "client theme"
+client_info[:decor_theme] = client_theme
 #Print out "client info"
+puts client_info
 #--USER INTERFACE--
 #Print "What is your name?"
 #Prompt user for input. 
