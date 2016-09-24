@@ -36,6 +36,23 @@
 # p numbers  
 
 #Keeps any numbers lower than 5. 
-num_array = [3, 4, 5, 6, 7]
-new_array = num_array.reject { |item| item >= 5 }
-p new_array 
+# num_array = [3, 4, 5, 6, 7]
+# new_array = num_array.reject { |item| item >= 5 }
+# p new_array 
+
+#Adds "is awesome" to a word if its length is greater than 4 
+# array = ["music", "love", "travel"]
+# array.map! do |word|
+# 	if word.length > 4
+# 	word + " is awesome!"
+# end 
+# end 
+
+# puts array 
+
+#Method that divides a number by 2 if even 
+# num_array = [1, 2, 3, 4]
+# even_array = num_array.collect do |num| 
+#  if num.even? then num / 2  
+# end 
+# end
