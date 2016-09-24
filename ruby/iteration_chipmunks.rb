@@ -1,7 +1,7 @@
 #RELASE 0
 def greeting
 	puts "Hello, my friend!"
-	yield
+	yield ("Sierra")
 end 
 
-greeting { puts "It's been a while!" }
+greeting { |name| puts "It's been a while, #{name}!" }
