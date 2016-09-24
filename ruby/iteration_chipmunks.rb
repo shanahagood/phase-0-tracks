@@ -23,3 +23,7 @@ end
 dishes.map! do |dish_type|
   puts dish_type * 2 
 end 
+
+dirty_or_clean.each do |state_of_dish, number|
+	puts "#{number} dishe(s) is/are #{state_of_dish}."
+end 
