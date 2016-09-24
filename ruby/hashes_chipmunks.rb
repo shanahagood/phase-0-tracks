@@ -3,19 +3,24 @@
 #"client info" is equal to empty hash. 
 client_info = {}
 #"client info""name" is equal to "client name"
-client_info[:name] = client_name
+client_name = client_info[:name] 
 #"client info""age" is equal to "client age"
-client_info[:age] = client_age
+client_age = client_info[:age] 
 #"client info""number of children" is equal to "client children"
-client_info[:number_of_children] = client_children
+client_children = client_info[:number_of_children] 
 #"client info""decor theme" is equal to "client theme"
-client_info[:decor_theme] = client_theme
+client_theme = client_info[:decor_theme]
 #Print out "client info"
 puts client_info
 #--USER INTERFACE--
 #Print "What is your name?"
+puts "What is your name?"
 #Prompt user for input. 
+name_input = gets.chomp
 #"name_input" is equal to "client name"
+name_input = client_name
+puts client_info
+# name_input = client_name
 #Print "What is your age"
 #Prompt user for input.
 #"age_input" is equal to "client age"
