@@ -30,6 +30,12 @@
 
 # p dirty_or_clean.map { |item| item[1] }
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-numbers.delete_if {|number| number < 5} 
-p numbers  
+#Delete any numbers lower than 5
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+# numbers.delete_if {|number| number < 5} 
+# p numbers  
+
+#Keeps any numbers lower than 5. 
+num_array = [3, 4, 5, 6, 7]
+new_array = num_array.reject { |item| item >= 5 }
+p new_array 
