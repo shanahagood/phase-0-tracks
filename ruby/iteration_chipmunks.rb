@@ -19,3 +19,7 @@ p dirty_or_clean
 dishes.each do |dish_type|
   puts "This is a #{dish_type}!"
 end 
+
+dishes.map! do |dish_type|
+  puts dish_type * 2 
+end 
