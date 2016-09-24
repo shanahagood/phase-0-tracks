@@ -15,3 +15,7 @@ dirty_or_clean = {
 	unwashed: 2
 }
 p dirty_or_clean
+
+dishes.each do |dish_type|
+  puts "This is a #{dish_type}!"
+end 
