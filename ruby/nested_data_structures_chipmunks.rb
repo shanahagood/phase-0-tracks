@@ -46,3 +46,7 @@ puts anime[:magical_girl]
 #Example 3-Change an item in a hash
 anime[:magical_girl][:series_name]=("Pretty Soldier Sailor Moon")  
 puts anime [:magical_girl][:series_name]
+
+#Example 4-Change an item inside an array
+anime[:sci_fi][:fav_characters][0]="Kumo-kumo"
+puts anime[:sci_fi][:fav_characters][0]
