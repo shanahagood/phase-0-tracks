@@ -40,3 +40,6 @@ anime = {
 #Example 1-Access element in an array by index
 puts anime[:sports][:fav_characters][1]
 
+#Example 2-Access a hash
+puts anime[:magical_girl]
+
