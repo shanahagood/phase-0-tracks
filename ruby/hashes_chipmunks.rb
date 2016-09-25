@@ -1,5 +1,5 @@
 #PSEUDOCODE
-#--COMPUTER LOGIC--
+
 #"client info" is equal to empty hash. 
 client_info = {}
 #Print "What is your name?"
@@ -14,23 +14,19 @@ puts "What is your age?"
 age_input = gets.chomp
 #Push "age input" into "client info" hash by storing in "client age."
 client_info[:client_age] = age_input
-#"client info""number of children" is equal to "client children"
-client_children = client_info[:number_of_children] 
+#Print "How many children do you have?"
+puts "How many children do you have?"
+#Prompt user for input
+children_input = gets.chomp
+#Push "children input" into "client info" hash by storing in "client children"
+client_info[:client_children] = children_input 
 #"client info""decor theme" is equal to "client theme"
 client_theme = client_info[:decor_theme]
 #Print out "client info"
 puts client_info
-#--USER INTERFACE--
-
- 
 
 
-
-
-#"age_input" is equal to "client age"
-#Print "How many children do you have?"
-#Prompt user for input
-#"children_input" is equal to "client children"
+ #"children_input" is equal to "client children"
 #Print "What decor theme do you prefer? Type anything you wish!"
 #Prompt user for input
 #"decor theme input" is equal to "client theme"
