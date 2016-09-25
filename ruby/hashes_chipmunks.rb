@@ -6,10 +6,14 @@ client_info = {}
 puts "What is your name?"
 #Prompt user for input.
 name_input = gets.chomp
-#Push "name input" into "client name" symbol in "client info."
+#Push "name input" into "client info" hash by storing in "client name."
 client_info[:client_name] = name_input
-#"client info""age" is equal to "client age"
-client_age = client_info[:age] 
+#Print "What is your age"
+puts "What is your age?"
+#Prompt user for input.
+age_input = gets.chomp
+#Push "age input" into "client info" hash by storing in "client age."
+client_info[:client_age] = age_input
 #"client info""number of children" is equal to "client children"
 client_children = client_info[:number_of_children] 
 #"client info""decor theme" is equal to "client theme"
@@ -19,13 +23,10 @@ puts client_info
 #--USER INTERFACE--
 
  
-name_input = gets.chomp
-#"name_input" is equal to "client name"
-name_input = client_name
-puts client_info
-# name_input = client_name
-#Print "What is your age"
-#Prompt user for input.
+
+
+
+
 #"age_input" is equal to "client age"
 #Print "How many children do you have?"
 #Prompt user for input
