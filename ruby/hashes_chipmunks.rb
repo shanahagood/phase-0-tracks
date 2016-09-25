@@ -2,8 +2,12 @@
 #--COMPUTER LOGIC--
 #"client info" is equal to empty hash. 
 client_info = {}
-#"client info""name" is equal to "client name"
-client_name = client_info[:name] 
+#Print "What is your name?"
+puts "What is your name?"
+#Prompt user for input.
+name_input = gets.chomp
+#Push "name input" into "client name" symbol in "client info."
+client_info[:client_name] = name_input
 #"client info""age" is equal to "client age"
 client_age = client_info[:age] 
 #"client info""number of children" is equal to "client children"
@@ -13,9 +17,8 @@ client_theme = client_info[:decor_theme]
 #Print out "client info"
 puts client_info
 #--USER INTERFACE--
-#Print "What is your name?"
-puts "What is your name?"
-#Prompt user for input. 
+
+ 
 name_input = gets.chomp
 #"name_input" is equal to "client name"
 name_input = client_name
