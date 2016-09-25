@@ -22,9 +22,16 @@ Anime = {
 			"Freyja Wion", 
 			"Kaname Bucaneer"
 		] 
-	}
-	
-	
-
-
+	},
+	magical_girl: {
+		series_name: 'Sailor Moon', 
+		series_info: {
+			episodes: 200
+			seasons: 5
+		},
+		fav_characters: [
+			"Usagi Tsukino", 
+			"Seiya Yaten", 
+			"Haruka Tennou"
+		] 
 }
