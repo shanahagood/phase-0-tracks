@@ -20,16 +20,16 @@ puts "How many children do you have?"
 children_input = gets.chomp
 #Push "children input" into "client info" hash by storing in "client children"
 client_info[:client_children] = children_input 
+#Print "What decor theme do you prefer? Type anything you wish!"
+puts "What decor theme do you prefer? Type anything you wish!"
+#Prompt user for input
+theme_input = gets.chomp
 #"client info""decor theme" is equal to "client theme"
-client_theme = client_info[:decor_theme]
+client_info[:decor_theme] = theme_input
 #Print out "client info"
 puts client_info
 
 
- #"children_input" is equal to "client children"
-#Print "What decor theme do you prefer? Type anything you wish!"
-#Prompt user for input
-#"decor theme input" is equal to "client theme"
 #Print "Is there anything you would like to update? (yes/no)"
 #Prompt user for input.  
 # => If "answer" is equal to "yes":
