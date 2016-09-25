@@ -45,7 +45,7 @@ p anime[:magical_girl]
 
 #Example 3-Change an item in a hash
 anime[:magical_girl][:series_name]=("Pretty Soldier Sailor Moon")  
-p [:magical_girl][:series_name]
+p anime[:magical_girl][:series_name]
 
 #Example 4-Change an item inside an array
 anime[:sci_fi][:fav_characters][0]="Kumo-kumo"
@@ -54,3 +54,8 @@ p anime[:sci_fi][:fav_characters][0]
 #Example 5-Add an item to an array by index
 anime[:sci_fi][:fav_characters].push("Mirage")
 p anime[:sci_fi][:fav_characters]
+
+#Example 6-Delete an item in an array by index
+anime[:sports][:fav_characters].delete_at(2)  
+p anime [:sports][:fav_characters]
+
