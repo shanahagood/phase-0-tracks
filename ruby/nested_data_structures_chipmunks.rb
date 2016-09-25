@@ -43,3 +43,6 @@ puts anime[:sports][:fav_characters][1]
 #Example 2-Access a hash
 puts anime[:magical_girl]
 
+#Example 3-Change an item in a hash
+anime[:magical_girl][:series_name]=("Pretty Soldier Sailor Moon")  
+puts anime [:magical_girl][:series_name]
