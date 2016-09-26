@@ -53,9 +53,12 @@ if answer == "yes"
 # =>    End conditional
 		end 
 # => Elsif "answer" is equal to "no":
+	elsif answer == "no"
 # =>   print "Nothing to update!"
+		puts "Nothing to update at this time."
 #End 
 end 
 # Print "client info"
+puts client_info
 
 
