@@ -1,3 +1,5 @@
+#RELEASE 0
+
 # Write a method that takes an array of integers and an 
 # integer to search for. The method should return the index of 
 # the item, or nil if the integer is not present in the array. 
@@ -29,6 +31,8 @@ end
 end 
 
 p search_array(arr, 1)
+#----------------------------------------------------------------
+#RELEASE 1
 
 #Add a method to your file that takes a number of Fibonacci 
 # terms to generate and returns an array of the terms. For 
@@ -51,5 +55,18 @@ next_index = previous_index + current_index
 	end
 end 
 p fib(6) 
+#------------------------------------------------------------------
+#RELEASE 2
+
+# 1. Choose a simple sorting algorithm to learn about. Bubble sort or insertion sort are good ones 
+# for beginners, but you're welcome to be more adventurous. 
+# 2. Form a conceptual understanding of how the algorithm works. What helps you grasp it? Do 
+# visualizations help? How can you find the right materials for yourself? 
+# 3. Notice your emotional state as you tackle this algorithm: do you feel 
+# frustrated, underqualified, stupid, or overwhelmed? Or is it more like excitement and curiosity? How 
+# do you think these feelings affect your ability to learn? 
+# 4. Pseudocode a sorting method that takes an array of integers and uses a sorting algorithm. The 
+# method should return a sorted version of the array. Your pseudocode should not be Ruby-specific. 
+# 5. Implement the sorting method in Ruby.
 
 
