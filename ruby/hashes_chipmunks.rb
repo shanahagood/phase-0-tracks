@@ -13,13 +13,13 @@ puts "What is your age?"
 #Prompt user for input.
 age_input = gets.chomp
 #Push "age input" into "client info" hash by storing in "client age."
-client_info[:client_age] = age_input
+client_info[:client_age] = age_input.to_i
 #Print "How many children do you have?"
 puts "How many children do you have?"
 #Prompt user for input
 children_input = gets.chomp
 #Push "children input" into "client info" hash by storing in "client children"
-client_info[:client_children] = children_input 
+client_info[:client_children] = children_input.to_i 
 #Print "What decor theme do you prefer? Type anything you wish!"
 puts "What decor theme do you prefer? Type anything you wish!"
 #Prompt user for input
