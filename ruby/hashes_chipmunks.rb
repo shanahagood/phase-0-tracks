@@ -33,7 +33,7 @@ puts client_info
 #Print "Is there anything you would like to update? (yes/no)"
 puts "Is there anything you would like to update? (yes/no)"
 #Prompt user for input. 
-answer = gets.chomp  
+answer = gets.chomp.downcase  
 #If "answer" is equal to "yes":
 if answer == "yes"
 # =>Print "What would you like to update?"
@@ -41,7 +41,7 @@ if answer == "yes"
 # =>Print "Type in one of these options: Name | Age | Number of Children | Decor Theme"
 	puts "Type in one of these options: 'n' for Name | 'a' for Age | 'c' for Number of Children | 'd' for Decor Theme"
 # =>Prompt user to type in option.
-	option = gets.chomp
+	option = gets.chomp.downcase
 # =>if option is equal to name: 
 	if option == "n" 
 # =>   	Print "Please update!"
