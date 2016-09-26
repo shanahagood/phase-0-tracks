@@ -14,7 +14,6 @@
 # p search_array(arr, 24)
 # => nil
 
-arr = [42, 89, 23, 1]
 #Define a method called search array that takes an array as one argument
 #And an integer as another. 
 def search_array(array, integer)
@@ -30,6 +29,7 @@ while index < array.length
 end 
 end 
 
+arr = [42, 89, 23, 1]
 p search_array(arr, 1)
 #----------------------------------------------------------------
 #RELEASE 1
@@ -54,17 +54,26 @@ next_index = previous_index + current_index
 		arr.push
 	end
 end 
-p fib(6) 
+
+# p fib(6) 
 #------------------------------------------------------------------
 #RELEASE 2
 
 # 1. Choose a simple sorting algorithm to learn about. Bubble sort or insertion sort are good ones 
 # for beginners, but you're welcome to be more adventurous. 
+# =>I chose insertion sort.  
 # 2. Form a conceptual understanding of how the algorithm works. What helps you grasp it? Do 
 # visualizations help? How can you find the right materials for yourself? 
+# => I'm a visual learner so typically seeing someone go through each step and explaining helps. I 
+# couldn't find any examples that I visually understood for this method but after reading through 
+# several, it seems that it is supposed to sort items by placing the item of larger value to the left,
+# while placing items of smaller value to the right of items of larger value.
 # 3. Notice your emotional state as you tackle this algorithm: do you feel 
 # frustrated, underqualified, stupid, or overwhelmed? Or is it more like excitement and curiosity? How 
 # do you think these feelings affect your ability to learn? 
+# => I feel stuipd, hopeless, and frustrated, to the point where there is no excitement, but maybe 
+# some higher degree of curiosity. When I feel like this, it makes it difficult to want to keep going. 
+# I feel like I'll never get it so what's the point? Where else can I look for understanding? 
 # 4. Pseudocode a sorting method that takes an array of integers and uses a sorting algorithm. The 
 # method should return a sorted version of the array. Your pseudocode should not be Ruby-specific. 
 # 5. Implement the sorting method in Ruby.
