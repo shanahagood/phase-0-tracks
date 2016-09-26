@@ -35,9 +35,14 @@ puts "Is there anything you would like to update? (yes/no)"
 #Prompt user for input. 
 answer = gets.chomp  
 # => If "answer" is equal to "yes":
+if answer == "yes"
 # =>   Print "What would you like to update?"
+	puts "What would you like to update?"
 # =>   Print ""Type in one of these options: Name | Age | Number of Children | Decor Theme"
+	puts "Type in one of these options: Name | Age | Number of Children | Decor Theme"
 # =>   Prompt user to type in option.
+	option = gets.chomp
+end 
 # =>     case "option":
 # =>   		When "name", then print "Please update!"
 # =>        "client info""name" = input prompt.
