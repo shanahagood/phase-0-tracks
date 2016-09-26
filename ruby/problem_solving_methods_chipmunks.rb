@@ -38,7 +38,18 @@ p search_array(arr, 1)
 # (How can you verify this without having to compare this huge number manually? 
 # Be smart with your driver code!)
 
-
-
+def fib(num)
+#Arr is equal to [0, 1]
+arr = [0, 1]
+#next index in arr is equal to previous index plus current index.
+next_index = previous_index + current_index
+#Q: How do we find the previous index and current index?
+#Until "arr" is the length of "num"
+	until arr.length = num 
+#Push the "next index" into the array. 
+		arr.push
+	end
+end 
+p fib(6) 
 
 
