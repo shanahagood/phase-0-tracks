@@ -31,7 +31,9 @@ puts client_info
 
 
 #Print "Is there anything you would like to update? (yes/no)"
-#Prompt user for input.  
+puts "Is there anything you would like to update? (yes/no)"
+#Prompt user for input. 
+answer = gets.chomp  
 # => If "answer" is equal to "yes":
 # =>   Print "What would you like to update?"
 # =>   Print ""Type in one of these options: Name | Age | Number of Children | Decor Theme"
@@ -45,3 +47,5 @@ puts client_info
 # =>   print "Nothing to update!"
 #End 
 # Print "client info"
+
+
