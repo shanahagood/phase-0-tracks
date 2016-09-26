@@ -34,20 +34,24 @@ puts client_info
 puts "Is there anything you would like to update? (yes/no)"
 #Prompt user for input. 
 answer = gets.chomp  
-# => If "answer" is equal to "yes":
+#If "answer" is equal to "yes":
 if answer == "yes"
-# =>   Print "What would you like to update?"
+# =>Print "What would you like to update?"
 	puts "What would you like to update?"
-# =>   Print ""Type in one of these options: Name | Age | Number of Children | Decor Theme"
+# =>Print ""Type in one of these options: Name | Age | Number of Children | Decor Theme"
 	puts "Type in one of these options: Name | Age | Number of Children | Decor Theme"
-# =>   Prompt user to type in option.
+# =>Prompt user to type in option.
 	option = gets.chomp
-end 
-# =>     case "option":
-# =>   		When "name", then print "Please update!"
-# =>        "client info""name" = input prompt.
-# =>  		Print "Name has been updated to 'client info''name'!"
-# =>     End 
+# =>if option is equal to name: 
+	if option == name 
+# =>   	Print "Please update!"
+		puts "Please update!"
+# =>    "client info""name" = input prompt.
+		client_info[:client_name] = gets.chomp
+# =>    Print "Name has been updated to 'client info''name'!"
+		puts "Name has been updated to #{client_info[:client_name]}!"
+# =>    End conditional
+		end 
 # => Elsif "answer" is equal to "no":
 # =>   print "Nothing to update!"
 #End 
