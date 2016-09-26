@@ -43,7 +43,7 @@ if answer == "yes"
 # =>Prompt user to type in option.
 	option = gets.chomp
 # =>if option is equal to name: 
-	if option == name 
+	if option == "name" 
 # =>   	Print "Please update!"
 		puts "Please update!"
 # =>    "client info""name" = input prompt.
@@ -55,6 +55,7 @@ if answer == "yes"
 # => Elsif "answer" is equal to "no":
 # =>   print "Nothing to update!"
 #End 
+end 
 # Print "client info"
 
 
