@@ -12,6 +12,7 @@
 # p search_array(arr, 24)
 # => nil
 
+arr = [42, 89, 23, 1]
 #Define a method called search array that takes an array as one argument
 #And an integer as another. 
 def search_array(array, integer)
@@ -26,3 +27,5 @@ while index < array.length
 
 end 
 end 
+
+p search_array(arr, 1)
