@@ -87,6 +87,24 @@ p fib(100)
 # I feel like I'll never get it so what's the point? Where else can I look for understanding? 
 # 4. Pseudocode a sorting method that takes an array of integers and uses a sorting algorithm. The 
 # method should return a sorted version of the array. Your pseudocode should not be Ruby-specific. 
+
+#Define a method called "sort" that takes one argument in its parameter
+#Sort numbers from smallest to largest
+#Q how do we determine which number is largest?
+#current index is equal to 1. 
+# => Until current index is greater than the array length minus one:
+# => right number is equal to the array's current index. 
+# => Left number is equal to the array's current index minus 1. 
+# =>   If right number is lower than left number:
+# =>   Array's current index equals left number. 
+# =>   Array's current index minus one equals right number. 
+# => End conditional
+# => Current index is equal to current index plus one. 
+# End 
+# => Return array
+#End method
+#Write out driver code to test method. 
+
 # 5. Implement the sorting method in Ruby.
 
 
