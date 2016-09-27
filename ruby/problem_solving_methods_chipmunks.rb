@@ -18,19 +18,20 @@
 #And an integer as another. 
 def search_array(array, integer)
 index = 0
-while index < array.length
-	index += 1 
-		if index == integer 
-			puts array[index]
-		else
-			puts "This integer is not included in this array"
+	while index < array.length 
+		if array[index] == integer 
+			return index
 		end 
-
-end 
+		index += 1
+	end
+	puts "This integer is not included." 
 end 
 
 arr = [42, 89, 23, 1]
 p search_array(arr, 1)
+p search_array (arr, 42)
+p search_array (arr, 89)
+p search_array (arr, 23)
 #----------------------------------------------------------------
 #RELEASE 1
 
@@ -46,16 +47,26 @@ def fib(num)
 #Arr is equal to [0, 1]
 arr = [0, 1]
 #next index in arr is equal to previous index plus current index.
-next_index = previous_index + current_index
+current_index = arr.length - 1
+previous_index = arr.length - 2
+# next_index = previous_index + current_index
 #Q: How do we find the previous index and current index?
 #Until "arr" is the length of "num"
-	until arr.length = num 
-#Push the "next index" into the array. 
+	until arr.length == num 
+#Push the "next index" into the array.
+		next_number = arr[current_index] + arr[previous_index] 
+		arr.push(next_number)
+		current_index += 1
+		previous_index += 1  
 		arr.push
 	end
+
+	arr
+
 end 
 
-# p fib(6) 
+p fib(6) 
+p fib(100)
 #------------------------------------------------------------------
 #RELEASE 2
 
