@@ -106,5 +106,19 @@ p fib(100)
 #Write out driver code to test method. 
 
 # 5. Implement the sorting method in Ruby.
+def sort(array)
+curr_index = 1 
+	until curr_index > (array.length - 1)
+	right_number = array[curr_index]
+	left_number = array[curr_index - 1] 
+		if right_number < left_number
+			array[curr_index] = left_number
+			array[curr_index - 1] = right_number 
+		end 
+		curr_index += 1
+	end 
+		return array 
+end 
 
+p sort([1, 3, 6, 2])
 
