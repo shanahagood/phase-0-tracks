@@ -65,7 +65,7 @@ example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer n
 
 
 example_names.length.times do |i|
-  santas << Santa.new(example_names[5], example_genders[1], example_ethnicities[0])
+  santas << Santa.new(example_names.sample, example_genders.sample, example_ethnicities.sample)
 end 
 santas.each do |santa|
   santa.speak
