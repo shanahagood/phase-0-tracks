@@ -1,7 +1,8 @@
 class Santa 
 #Instance methods
-	def initialize(gender, ethnicity)
+	def initialize(name, gender, ethnicity)
 		puts "Initializing new Santa instance...!"
+		@name = name 
 		@gender = gender
 		@ethnicity = ethnicity 
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", 
@@ -11,6 +12,7 @@ class Santa
 
 	def speak 
 		puts "Ho, ho, ho! Haaaappy holidays!"
+		puts "This Santa's name is #{@name}!"
 		puts "This Santa is #{@gender} and #{@ethnicity}!"
 	end 
 
@@ -20,7 +22,10 @@ class Santa
 
 end 
 
-new_santa = Santa.new("Female", "African-American") 
+new_santa = Santa.new("Masheika", "Female", "African-American") 
+new_santa.speak 
+new_santa.eat_milk_and_cookies("snickerdoodle")
 
+new_santa = Santa.new("Masami", "Female", "Japanese") 
 new_santa.speak 
 new_santa.eat_milk_and_cookies("snickerdoodle")
