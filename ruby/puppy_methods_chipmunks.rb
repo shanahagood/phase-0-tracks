@@ -1,47 +1,47 @@
-# class Puppy
+class Puppy
 
-#   def initialize
-#   	puts "Initializing new puppy instance..."
-#   end 
+  def initialize
+  	puts "Initializing new puppy instance..."
+  end 
 
-#   def fetch(toy)
-#     puts "I brought back the #{toy}!"
-#     toy
-#   end
+  def fetch(toy)
+    puts "I brought back the #{toy}!"
+    toy
+  end
 
-#   def speak(int)
-#   	puts "Woof" * int 
-#   end 
+  def speak(int)
+  	puts "Woof" * int 
+  end 
 
-#   def rollover
-#   	puts "*rollover*"
-#   end
+  def rollover
+  	puts "*rollover*"
+  end
 
-#   def human_to_dog_years(int)
-#   	if int <= 21
-#   		under2 = int / 10.5
-#   		puts "Dog is #{under2} years old as a human"
-#   	else int > 21 # int is 40, 21 of those years equals 2 dog years, then the remaining years/4 adds to 2
-#   		over2 = ((int - 21) / 4) + 2
-#   		puts "Dog is are #{over2} years old as a human"
-#   	end 
-#   end
+  def human_to_dog_years(int)
+  	if int <= 21
+  		under2 = int / 10.5
+  		puts "Dog is #{under2} years old as a human"
+  	else int > 21 # int is 40, 21 of those years equals 2 dog years, then the remaining years/4 adds to 2
+  		over2 = ((int - 21) / 4) + 2
+  		puts "Dog is are #{over2} years old as a human"
+  	end 
+  end
 
-#   def shake
-#   	puts "*shakes hand*"
-#   end
+  def shake
+  	puts "*shakes hand*"
+  end
 
-# end
+end
 
-# puppy = Puppy.new 
+puppy = Puppy.new 
 
-# puts puppy.shake 
-# puts puppy.fetch("ball")
-# puts puppy.speak(3)
-# puts puppy.rollover 
-# puts puppy.human_to_dog_years(19.0)
+puts puppy.shake 
+puts puppy.fetch("ball")
+puts puppy.speak(3)
+puts puppy.rollover 
+puts puppy.human_to_dog_years(19.0)
 
-# fido = Puppy.new
+fido = Puppy.new
 
 class Cat
 	def initialize
