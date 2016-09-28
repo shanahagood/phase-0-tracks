@@ -16,8 +16,8 @@ class Santa
 
 	def speak 
 		puts "Ho, ho, ho! Haaaappy holidays!"
-		puts "This Santa's name is #{@name}!"
-		puts "This Santa is #{@gender} and #{@ethnicity}!"
+		# puts "This Santa's name is #{@name}!"
+		# puts "This Santa is #{@gender} and #{@ethnicity}!"
 	end 
 
 	def eat_milk_and_cookies(cookie)
@@ -26,7 +26,7 @@ class Santa
 
 	def celebrate_birthday
 		@age = age + 1
-		puts "#{@name} is now #{@age} years old!"
+		puts "It's my birthday! I am now #{@age} years old! *confetti* "
 	end 
 
 	def get_mad_at(reindeer)
@@ -54,6 +54,7 @@ example_names.length.times do |i|
   santas << Santa.new(example_names.sample, example_genders.sample, example_ethnicities.sample)
 end 
 santas.each do |santa|
+  santa.about
   santa.speak
   santa.eat_milk_and_cookies("snickerdoodle")
   santa.celebrate_birthday
