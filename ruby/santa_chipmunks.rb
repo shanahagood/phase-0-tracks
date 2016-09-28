@@ -16,8 +16,6 @@ class Santa
 
 	def speak 
 		puts "Ho, ho, ho! Haaaappy holidays!"
-		# puts "This Santa's name is #{@name}!"
-		# puts "This Santa is #{@gender} and #{@ethnicity}!"
 	end 
 
 	def eat_milk_and_cookies(cookie)
@@ -44,9 +42,11 @@ class Santa
 end 
 
 santas = []
-example_names = ["Masheika", "Mashani", "Shana", "Natalie", "Quiara", "Ana", "Angel", "Edie", "Leanne"]
-example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+example_names = ["Masheika", "Mashani", "Shana", "Natalie", "Quiara", "Ana", "Angel", "Edie", "Leanne", "Michael", 
+	"Russel", "Gerry", "Tim", "Toshi", "Ai", "Erick", "Bob", "Ron", "Duy", "Nick", "Daniel"]
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "transgender", "nonbinary", "cis"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A", 
+	"Fillipino", "Chinese", "Native American", "Indian", "Malaysian", "Cambodian", "French", "Italian"]
 
 
 
