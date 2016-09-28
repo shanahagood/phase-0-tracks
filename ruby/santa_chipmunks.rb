@@ -20,12 +20,25 @@ class Santa
 		puts "That was a good #{cookie}!"
 	end  
 
+	def celebrate_birthday(age)
+		@age = age + 1
+		puts "#{@name} is now #{@age} years old!"
+	end 
+#getter methods for attributes (readable)
+	# def age
+	#   @age
+	# end
+#setter methods for attributes (writable)
+
 end 
+
 
 new_santa = Santa.new("Masheika", "Female", "African-American") 
 new_santa.speak 
 new_santa.eat_milk_and_cookies("snickerdoodle")
+new_santa.celebrate_birthday(40)
 
 new_santa = Santa.new("Masami", "Female", "Japanese") 
 new_santa.speak 
 new_santa.eat_milk_and_cookies("snickerdoodle")
+new_santa.celebrate_birthday(45)
