@@ -35,6 +35,7 @@ class Santa
 		puts "#{@name} is mad at #{reindeer}! >:("
 	end 
 #getter methods for attributes (readable)
+#Allows access to attributes outside of class 
 	# def name
 	#   @name
 	# end 
@@ -56,23 +57,31 @@ class Santa
 	# end 
 end 
 
+santas = []
+example_names = ["Masheika", "Mashani", "Shana", "Natalie", "Quiara", "Ana", "Angel", "Edie", "Leanne"]
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
-new_santa = Santa.new("Masheika", "Female", "African-American") 
-puts "My gender is #{new_santa.gender}!"
-new_santa.speak 
-new_santa.eat_milk_and_cookies("snickerdoodle")
-new_santa.celebrate_birthday(40)
-new_santa.get_mad_at("Vixen")
-new_santa.gender = "male"
-puts "My gender is now #{new_santa.gender}"
-puts "#{new_santa.name} is #{new_santa.age} years old!"
-puts "#{new_santa.name} is #{new_santa.ethnicity}!"
-puts "-----"
-new_santa = Santa.new("Masami", "Female", "Japanese") 
-puts "My gender is #{new_santa.gender}!"
-new_santa.speak 
-new_santa.eat_milk_and_cookies("snickerdoodle")
-new_santa.celebrate_birthday(45)
-new_santa.gender = "nonbinary"
-puts "My gender is now #{new_santa.gender}"
+example_genders.length.times do |i|
+  santas << Santa.new(example_names[5], example_genders[1], example_ethnicities[0])
+end
+
+# new_santa = Santa.new("Masheika", "Female", "African-American") 
+# puts "My gender is #{new_santa.gender}!"
+# new_santa.speak 
+# new_santa.eat_milk_and_cookies("snickerdoodle")
+# new_santa.celebrate_birthday(40)
+# new_santa.get_mad_at("Vixen")
+# new_santa.gender = "male"
+# puts "My gender is now #{new_santa.gender}"
+# puts "#{new_santa.name} is #{new_santa.age} years old!"
+# puts "#{new_santa.name} is #{new_santa.ethnicity}!"
+# puts "-----"
+# new_santa = Santa.new("Masami", "Female", "Japanese") 
+# puts "My gender is #{new_santa.gender}!"
+# new_santa.speak 
+# new_santa.eat_milk_and_cookies("snickerdoodle")
+# new_santa.celebrate_birthday(45)
+# new_santa.gender = "nonbinary"
+# puts "My gender is now #{new_santa.gender}"
 
