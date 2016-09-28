@@ -11,7 +11,7 @@ class Santa
 		@ethnicity = ethnicity 
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", 
 			"Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-		@age = 0
+		@age = rand(0..140)
 	end 
 
 	def speak 
@@ -24,7 +24,7 @@ class Santa
 		puts "That was a good #{cookie}!"
 	end  
 
-	def celebrate_birthday(age)
+	def celebrate_birthday
 		@age = age + 1
 		puts "#{@name} is now #{@age} years old!"
 	end 
@@ -70,6 +70,7 @@ end
 santas.each do |santa|
   santa.speak
   santa.eat_milk_and_cookies("snickerdoodle")
+  santa.celebrate_birthday
   puts "--------"
 end 
 
