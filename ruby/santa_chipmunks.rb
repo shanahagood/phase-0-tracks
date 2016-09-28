@@ -62,9 +62,16 @@ example_names = ["Masheika", "Mashani", "Shana", "Natalie", "Quiara", "Ana", "An
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
-example_genders.length.times do |i|
+
+
+example_names.length.times do |i|
   santas << Santa.new(example_names[5], example_genders[1], example_ethnicities[0])
-end
+end 
+santas.each do |santa|
+  santa.speak
+  santa.eat_milk_and_cookies("snickerdoodle")
+  puts "--------"
+end 
 
 # new_santa = Santa.new("Masheika", "Female", "African-American") 
 # puts "My gender is #{new_santa.gender}!"
@@ -85,3 +92,19 @@ end
 # new_santa.gender = "nonbinary"
 # puts "My gender is now #{new_santa.gender}"
 
+# #Ask user how many santas they would like to create. 
+# puts "Welcome to Santa Con Simulator!" 
+# puts "Enter in a number for the amount of Santas you would like to create."
+# puts "When finished, please type 'done'!" 
+# #Set a variable called "answer" equal to user input. 
+# answer = gets.chomp
+# #While answer is not equal to "done":
+# 	if answer.integer?
+# 		answer = answer.to_i
+# 		answer.times do |i|
+# 		santas << Santa.new(example_names[5], example_genders[1], example_ethnicities[0])
+# 	else 
+# 		answer = answer.to_s 
+# 		puts "Done creating Santas!"
+# 	end 
+# end
