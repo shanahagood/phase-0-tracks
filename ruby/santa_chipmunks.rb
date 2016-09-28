@@ -1,4 +1,5 @@
 class Santa 
+	attr_reader :name, :gender, :ethnicity, :age
 #Instance methods
 	def initialize(name, gender, ethnicity)
 		puts "Initializing new Santa instance...!"
@@ -31,22 +32,22 @@ class Santa
 		puts "#{@name} is mad at #{reindeer}! >:("
 	end 
 #getter methods for attributes (readable)
-	def name
-	  @name
-	end 
+	# def name
+	#   @name
+	# end 
 
-	def gender
-	  @gender
-	end
+	# def gender
+	#   @gender
+	# end
 
-	def age
-	  @age
-	end 
+	# def age
+	#   @age
+	# end 
 
-	def ethnicity
-	  @ethnicity
-	end 
-#setter methods for attributes (writable)
+	# def ethnicity
+	#   @ethnicity
+	# end 
+#setter methods for attributes (writable or reassignable)
 	def gender=(new_gender)
 		@gender = new_gender
 	end 
