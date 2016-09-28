@@ -1,5 +1,8 @@
 class Santa 
-	attr_reader :name, :gender, :ethnicity, :age
+#Declares getter methods, makes methods readable
+	attr_reader :name, :ethnicity, :age
+#Declares getter and setter, makes methods read-and-writable 
+	attr_accessor :gender 
 #Instance methods
 	def initialize(name, gender, ethnicity)
 		puts "Initializing new Santa instance...!"
@@ -48,9 +51,9 @@ class Santa
 	#   @ethnicity
 	# end 
 #setter methods for attributes (writable or reassignable)
-	def gender=(new_gender)
-		@gender = new_gender
-	end 
+	# def gender=(new_gender)
+	# 	@gender = new_gender
+	# end 
 end 
 
 
