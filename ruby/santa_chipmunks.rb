@@ -34,6 +34,32 @@ class Santa
 		@reindeer_ranking.push(reindeer)
 		puts "#{@name} is mad at #{reindeer}! >:("
 	end 
+
+	def about
+		puts "Name: #{@name}"
+		puts "Gender: #{@gender}"
+		puts "Ethnicity: #{@ethnicity}"
+	end  
+
+end 
+
+santas = []
+example_names = ["Masheika", "Mashani", "Shana", "Natalie", "Quiara", "Ana", "Angel", "Edie", "Leanne"]
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+
+
+
+example_names.length.times do |i|
+  santas << Santa.new(example_names.sample, example_genders.sample, example_ethnicities.sample)
+end 
+santas.each do |santa|
+  santa.speak
+  santa.eat_milk_and_cookies("snickerdoodle")
+  santa.celebrate_birthday
+  puts "--------"
+end 
+
 #getter methods for attributes (readable)
 #Allows access to attributes outside of class 
 	# def name
@@ -55,24 +81,6 @@ class Santa
 	# def gender=(new_gender)
 	# 	@gender = new_gender
 	# end 
-end 
-
-santas = []
-example_names = ["Masheika", "Mashani", "Shana", "Natalie", "Quiara", "Ana", "Angel", "Edie", "Leanne"]
-example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-
-
-
-example_names.length.times do |i|
-  santas << Santa.new(example_names.sample, example_genders.sample, example_ethnicities.sample)
-end 
-santas.each do |santa|
-  santa.speak
-  santa.eat_milk_and_cookies("snickerdoodle")
-  santa.celebrate_birthday
-  puts "--------"
-end 
 
 # new_santa = Santa.new("Masheika", "Female", "African-American") 
 # puts "My gender is #{new_santa.gender}!"
