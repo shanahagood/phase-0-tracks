@@ -24,6 +24,12 @@ class Santa
 		@age = age + 1
 		puts "#{@name} is now #{@age} years old!"
 	end 
+
+	def get_mad_at(reindeer)
+		@reindeer_ranking.delete(reindeer)
+		@reindeer_ranking.push(reindeer)
+		puts "#{@name} is mad at #{reindeer}! >:("
+	end 
 #getter methods for attributes (readable)
 	# def age
 	#   @age
@@ -37,6 +43,7 @@ new_santa = Santa.new("Masheika", "Female", "African-American")
 new_santa.speak 
 new_santa.eat_milk_and_cookies("snickerdoodle")
 new_santa.celebrate_birthday(40)
+new_santa.get_mad_at("Vixen")
 
 new_santa = Santa.new("Masami", "Female", "Japanese") 
 new_santa.speak 
