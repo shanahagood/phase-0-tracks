@@ -31,21 +31,30 @@ class Santa
 		puts "#{@name} is mad at #{reindeer}! >:("
 	end 
 #getter methods for attributes (readable)
-	# def age
-	#   @age
-	# end
+	def gender
+	  @gender
+	end
 #setter methods for attributes (writable)
-
+	def gender=(new_gender)
+		@gender = new_gender
+	end 
 end 
 
 
 new_santa = Santa.new("Masheika", "Female", "African-American") 
+puts "My gender is #{new_santa.gender}!"
 new_santa.speak 
 new_santa.eat_milk_and_cookies("snickerdoodle")
 new_santa.celebrate_birthday(40)
 new_santa.get_mad_at("Vixen")
-
+new_santa.gender = "male"
+puts "My gender is now #{new_santa.gender}"
+puts "-----"
 new_santa = Santa.new("Masami", "Female", "Japanese") 
+puts "My gender is #{new_santa.gender}!"
 new_santa.speak 
 new_santa.eat_milk_and_cookies("snickerdoodle")
 new_santa.celebrate_birthday(45)
+new_santa.gender = "nonbinary"
+puts "My gender is now #{new_santa.gender}"
+
