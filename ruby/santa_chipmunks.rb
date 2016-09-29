@@ -5,7 +5,7 @@ class Santa
 	attr_accessor :gender 
 #Instance methods
 	def initialize(name, gender, ethnicity)
-		puts "Initializing new Santa instance...!"
+		# puts "Initializing new Santa instance...!"
 		@name = name 
 		@gender = gender
 		@ethnicity = ethnicity 
@@ -31,6 +31,7 @@ class Santa
 		@reindeer_ranking.delete(reindeer)
 		@reindeer_ranking.push(reindeer)
 		puts "#{@name} is mad at #{reindeer}! >:("
+		puts "The reindeer formation is now #{@reindeer_ranking}!"
 	end 
 
 	def about
@@ -48,17 +49,25 @@ example_genders = ["agender", "female", "bigender", "male", "female", "gender fl
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A", 
 	"Fillipino", "Chinese", "Native American", "Indian", "Malaysian", "Cambodian", "French", "Italian"]
 
-
-
-example_names.length.times do |i|
-  santas << Santa.new(example_names.sample, example_genders.sample, example_ethnicities.sample)
+#Ask user how many santas they would like to create. 
+puts "Welcome to Santa Con Simulator!" 
+puts "Enter in a number for the amount of Santas you would like to create."
+#Set a variable called "answer" equal to user input. 
+answer = gets.chomp
+answer = answer.to_i
+puts "Creating #{answer} Santas!"
+answer.times do |i|
+# example_names.length.times do |i|
+santas << Santa.new(example_names.sample, example_genders.sample, example_ethnicities.sample)
 end 
 santas.each do |santa|
+  puts "--------"
+  puts "Initializing new Santa instance...!"
   santa.about
   santa.speak
   santa.eat_milk_and_cookies("snickerdoodle")
   santa.celebrate_birthday
-  puts "--------"
+  santa.get_mad_at("Vixen")
 end 
 
 #getter methods for attributes (readable)
