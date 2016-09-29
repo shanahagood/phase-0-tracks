@@ -8,5 +8,19 @@ module Shout
   end
 end 
 
-Shout.self.yell_angrily("I hate you!")
-Shout.self.yelling_happily("I love you!")
+# Shout.yell_angrily("I hate you!")
+# Shout.yelling_happily("I love you!")
+
+class Adult 
+	include Shout
+end 
+
+class Child
+	include Shout
+end 
+
+Adult = adult.new
+self.yell_angirly("Wash the dishes")
+
+Child = child.new
+self.yell_angirly("I hate chores")
