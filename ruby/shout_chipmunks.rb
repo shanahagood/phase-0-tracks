@@ -21,6 +21,9 @@ end
 
 adult = Adult.new
 adult.yell_angrily("Wash the dishes")
+adult.yell_happily("I love you")
 
 child = Child.new
-adult.yell_angrily("I hate chores")
+child.yell_angrily("I hate chores")
+child.yell_happily("I love you, too")
+
