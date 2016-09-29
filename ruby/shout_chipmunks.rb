@@ -1,10 +1,10 @@
 module Shout
-  def self.yell_angrily(words)
-    words + "!!!" + " :("
+  def yell_angrily(words)
+    puts "#{words}" + "!!!" + " :("
   end 
 
-  def self.yelling_happily(words)
-  	words + "!!!" + " :D"
+  def yelling_happily(words)
+  	puts "#{words}" + "!!!" + " :D"
   end
 end 
 
@@ -19,8 +19,8 @@ class Child
 	include Shout
 end 
 
-Adult = adult.new
-self.yell_angirly("Wash the dishes")
+adult = Adult.new
+adult.yell_angrily("Wash the dishes")
 
-Child = child.new
-self.yell_angirly("I hate chores")
+child = Child.new
+adult.yell_angrily("I hate chores")
