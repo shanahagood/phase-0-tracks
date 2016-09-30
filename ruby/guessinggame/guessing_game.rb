@@ -1,3 +1,6 @@
+class Guessing_game 
+end 
+
 #Create a class called "wordguessgame"
 #Define initialize method
 #	@already_guessed = []
