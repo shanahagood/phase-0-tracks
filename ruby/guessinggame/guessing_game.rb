@@ -1,13 +1,30 @@
 class Guessing_game 
-	attr_accessor :secret_word
+	attr_reader :guess_count
 
-	# def initialiaze 
-	# 	puts "initializing new game..."
-	# end 
+	def initialiaze 
+		puts "initializing new game..."
+		@guess_count = 0  
+	end 
 
 	def mask_secret_word(secret_word)
 		secret_word = "_ " * secret_word.length
 		# puts secret_word
+	end 
+
+	# def remaining_guesses
+	# 	while @guess_count != 0
+	# 	@guess_count -= 1
+	# 	end 
+	# end 
+
+	def guesses_left(secret_word)
+	  @guess_count = secret_word.length
+	  while @guess_count != 0
+	  	# if secret_word.include? "letter_guess"
+		puts "You have #{@guess_count} guesses remaining!"
+		# puts "Please enter in a letter!"
+		@guess_count -= 1
+	  end 
 	end 
 
 end 
@@ -17,6 +34,12 @@ game = Guessing_game.new
 puts "Please enter in a secret word"
 secret_w_input = gets.chomp 
 puts game.mask_secret_word(secret_w_input)
+
+puts "Please guess a letter"
+letter_guess = gets.chomp 
+# puts game.remaining_guesses
+
+puts game.guesses_left(secret_w_input)
 
 # game.mask_secret_word("lemons")
 
