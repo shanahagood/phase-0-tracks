@@ -21,7 +21,7 @@ class Guessing_game
 	def guesses_left(secret_word, guess)
 	  @guess_count = secret_word.length
 	  while @game_over != false 
-	  	@guess_count += 1 
+	  	@guess_count -= 1 
 	  	if secret_word.include? guess
 	  		puts "You guessed correctly!"
 	  	else 
