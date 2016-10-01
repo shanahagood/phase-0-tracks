@@ -7,14 +7,18 @@ class Guessing_game
 
 	def mask_secret_word(secret_word)
 		secret_word = "_ " * secret_word.length
-		puts secret_word
+		# puts secret_word
 	end 
 
 end 
 
 game = Guessing_game.new 
 
-game.mask_secret_word("lemons")
+puts "Please enter in a secret word"
+secret_w_input = gets.chomp 
+puts game.mask_secret_word(secret_w_input)
+
+# game.mask_secret_word("lemons")
 
 #Create a class called "wordguessgame"
 #Define initialize method
