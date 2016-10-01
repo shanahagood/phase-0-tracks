@@ -1,20 +1,20 @@
 class Guessing_game 
 	attr_accessor :secret_word
 
-	def initialiaze 
-		puts "initializing new game..."
-	end 
+	# def initialiaze 
+	# 	puts "initializing new game..."
+	# end 
 
 	def mask_secret_word(secret_word)
 		secret_word = "_ " * secret_word.length
-		print secret_word
+		puts secret_word
 	end 
 
 end 
 
-# game = Guessing_game.new 
+game = Guessing_game.new 
 
-# game.mask_secret_word("lemons")
+game.mask_secret_word("lemons")
 
 #Create a class called "wordguessgame"
 #Define initialize method
