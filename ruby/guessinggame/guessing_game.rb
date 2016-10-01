@@ -12,6 +12,10 @@ class Guessing_game
 
 end 
 
+# game = Guessing_game.new 
+
+# game.mask_secret_word("lemons")
+
 #Create a class called "wordguessgame"
 #Define initialize method
 #	@already_guessed = []
