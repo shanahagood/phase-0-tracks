@@ -1,6 +1,6 @@
 require_relative 'guessing_game'
 
-describe Calculator do
+describe Guessing_game do
   let(:guessing_game) { Guessing_game.new }
 
   it "masks the secret word" do
