@@ -1,39 +1,31 @@
 class Guessing_game 
-	attr_reader :guess_count, :game_over
+
+	attr_reader :game_over
 
 	def initialiaze 
-		puts "initializing new game..."
-		@guess_count = guess_count 
-		@game_over = false 
+		 
+		# @game_over = false 
+		# @secret_word = secret_word 
+		# @guess_count = guess_count 
+ 
 	end 
 
-	# def mask_secret_word(secret_word)
-	# 	secret_word = "_ " * secret_word.length
-	# 	# puts secret_word
-	# end 
-
+	#tells me .length is not a defined method when I try 
+	#to call remaining_guesses in the human logic....
 	# def remaining_guesses
-	# 	while @guess_count != 0
+	# 	@guess_count = @secret_word.length
+	# 	puts @guess_count 
+	# 	until @guess_count == 0
 	# 	@guess_count -= 1
-	# 	end 
+	# end  
+		 
 	# end 
 
-
-
-	# def guesses_left
-	# 	@guess_count -= 1
-	# 	if @guess_count == 0 
-	# 		@game_over = true
-	# 	else 
-	# 		false  
-	# 	end 
-	# end 
-
-	# def guesses_left(secret_word, guess)
-	#   @guess_count = secret_word.length
+	
+	#   # @guess_count = secret_word.length
 	#   while @game_over != false 
 	#   	@guess_count -= 1 
-	#   	if secret_word.include? guess
+	#   	if @secret_word.include? guess
 	#   		puts "You guessed correctly!"
 	#   	else 
 	#   		puts "Sorry, but your guess was incorrect. Try again!"
@@ -46,35 +38,40 @@ class Guessing_game
 
 end 
 
+letter_guess_arr = []
+
 game = Guessing_game.new 
 puts "Welcome to the guessing game!"
 
-secret_word_arr = []
-
 puts "Please enter in a secret word"
 secret_w_input = gets.chomp 
-secret_w_input.split(' ')
-p secret_w_input 
-secret_word_arr << secret_w_input
-p secret_word_arr
-# puts game.mask_secret_word(secret_w_input)
+secret_w_input.split('')
+# secret_w_input.split(" ")
+# p secret_w_input  
+# secret_word_arr << secret_w_input
+# p secret_word_arr
+# secret_word_arr.split('')
 
+# while game.game_over != true 
+# letter_guess_arr << letter_guess
 
-letter_guess_arr =[]
-
-while game.game_over != true 
+remaining_guesses = secret_w_input.length
+until remaining_guesses == 0 
+	remaining_guesses -= 1
 	puts "Please guess a letter"
 	letter_guess = gets.chomp 
-	letter_guess_arr << letter_guess 
-		if secret_word_arr.include? letter_guess
-			puts "You guessed right! Keep going!"
-			puts "You have guesses remaining!"
+	letter_guess_arr << letter_guess
+		if secret_w_input.include?(letter_guess)
+			puts "You guessed correctly!"
+			puts "You have #{remaining_guesses} guesses remaining!"
 		else 
-			puts "Sorry, but you guessed wrong! Try again!"
-			puts "You have guesses remaining!"
+			puts "Sorry, but your guess was incorrect!"
+			puts "You have #{remaining_guesses} guesses remaining!"
 		end 
 	end 
-# end 
+end 
+#  end 
+ 
 
 
 # puts game.remaining_guesses
@@ -87,15 +84,13 @@ while game.game_over != true
 
 #Create a class called "wordguessgame"
 #Define initialize method
-#	@already_guessed = []
-#	@letter_guess = letter_guess
 #Create a method that allows a user to enter in a secret word and masks it. 
 #Store "secret word" in an array called "secret w arr"
 #Define a method called "mask secret word" that takes an argument called "secret word."
 #"secret word" is equal to "_ " times length of "word." 
 #end method 
 #Create a method that limits guesses based on the secret word's length.
-#Define a method called "limit guess" that takes an argument called "letter_guess."
+#Define a method called "limit guess" that takes an argument called "secret word."
 #"guesses_left" is equal to the length of "secret word".
 #until "guesses_left" is equal to 0:
 	# Push letter guess in empty array called "letter_guess_arr" 
