@@ -17,5 +17,6 @@
 // 5. Sort the index location from greatest to smallest. 
 
 function reverseStr(str) {
-	
+	for (var index = 0; index <= str.length; index++) {
+		console.log(str(index));
 }			
