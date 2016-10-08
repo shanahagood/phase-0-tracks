@@ -13,19 +13,24 @@
 //    You can see that for the regular order, the index is in order from 0-4. For the reverse, the 
 // 	  index is in order from 4-0. So the letters need to change from being in order from smallest index 
 //    to greatest index into being in order from greatest index to smallest index. 
-// 4. Iterate through each letter in "string array" and print out or return the index location.  
-// 5. Sort the index location from greatest to smallest. 
-// 6. Store sorted index locations in a variabled called "reversed."
-// 7. Print out "reversed". 
-
+//	  This can be achieved by printing the index backwards.
+// 4. Index is equal to the length of the "string array."
+// 5. While the index is greater than or equal to zero: 
+//		decrement the index by one. 
+// 6. Print out the letter at "index" of "string array." 
 
 
 function reverseStr(str) {
 // console.log(str);
 var str_array = str.split('');
 // console.log(str_array);
-	for (var index = 0; index < str_array.length; index++) {
-		console.log(index);
+	// for (var index = 0; index < str_array.length; index++) {
+	// 	console.log(index);
+	// }
+	for (var index = str_array.length; index >= 0; index--) {
+		console.log(str_array[index]);
+	}
+	
 }		
 
 console.log(reverseStr("hello"));
