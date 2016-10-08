@@ -16,7 +16,14 @@
 // 4. Iterate through each letter in "string array" and print out or return the index location.  
 // 5. Sort the index location from greatest to smallest. 
 
+
+
 function reverseStr(str) {
-	for (var index = 0; index <= str.length; index++) {
-		console.log(str(index));
-}			
+// console.log(str);
+var str_array = str.split('');
+// console.log(str_array);
+	for (var index = 0; index < str_array.length; index++) {
+		console.log(index);
+}		
+
+console.log(reverseStr("hello"));
