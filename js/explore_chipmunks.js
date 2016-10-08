@@ -15,6 +15,8 @@
 //    to greatest index into being in order from greatest index to smallest index. 
 // 4. Iterate through each letter in "string array" and print out or return the index location.  
 // 5. Sort the index location from greatest to smallest. 
+// 6. Store sorted index locations in a variabled called "reversed."
+// 7. Print out "reversed". 
 
 
 
