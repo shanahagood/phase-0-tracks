@@ -44,7 +44,7 @@ console.log(returnLongestPhrase(["long phrase", "longest phrase", "longer phrase
 
 function compareObjects(object_1, object_2) {
 	// console.log(object_1, object_2)
-	if (object_1[:name].include?(object_2[name] || (object_1[age].include?(object_2[age]) { 
+	if (object_1[:name].include?(object_2[name]) || (object_1[age].include?(object_2[age])) { 
 		console.log("true");
 	} else {
 		console.log("false");
