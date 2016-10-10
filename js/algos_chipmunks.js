@@ -40,8 +40,17 @@ console.log(returnLongestPhrase(["long phrase", "longest phrase", "longer phrase
 // Again, try to reason through the problem using the basics you've already learned, rather than looking up slick search 
 // functions that will do the job for you. We'd rather see you write code that you actually understand!
 
+//If object 1 includes things from object 2, print true. else, print false. 
+
 function compareObjects(object_1, object_2) {
 	// console.log(object_1, object_2)
+	if (object_1[:name].include?(object_2[name] || (object_1[age].include?(object_2[age]) { 
+		console.log("true");
+	} else {
+		console.log("false");
+	}
+	}
+
 }
 
 compareObjects({name: "Steven", age: 54}, {name: "Tamir", age: 54})
