@@ -12,7 +12,7 @@
 //6. Else print that the phrase at index 3 is the longest. 
 
 function returnLongestPhrase(phrases) {
-	// console.log(phrases);
+	
 	for (var index = 0; index < phrases.length; index ++) {
 		console.log(phrases[index] + " is " + phrases[index].length + " characters long.");
 
@@ -23,14 +23,14 @@ function returnLongestPhrase(phrases) {
 	} else {
 		console.log(phrases[3] + " is the longest phrase");
 	}
-	}
+}
 	
 
 }
 
 console.log(returnLongestPhrase(["long phrase", "longest phrase", "longer phrase"]))
 
-//------------------------
+//-----------------------------
 // write a function that takes two objects and checks to see if the objects share at least one key-value pair. 
 // (You'll keep adding to this file, so we suggest grouping functions at the top and testing at the bottom of the file.) 
 // If we called your function with {name: "Steven", age: 54} and {name: "Tamir", age: 54}, the function would return true, 
@@ -40,25 +40,26 @@ console.log(returnLongestPhrase(["long phrase", "longest phrase", "longer phrase
 // Again, try to reason through the problem using the basics you've already learned, rather than looking up slick search 
 // functions that will do the job for you. We'd rather see you write code that you actually understand!
 
-//1. Declarea  function called "compare objects" that takes two arguments in its parameters. 
-//2. If object 1's symbol for name includes anything from object 2's symbol for name, 
-//   or if object 1's symbol for age includes anything from object 2's symbol for age: 
+//1. Declare a function called "compare objects" that takes two arguments in its parameters. 
+//2. If object 1's symbol for name is equal to object 2's symbol for name, 
+//   or if object 1's symbol for age is equal to object 2's symbol for age: 
 //		print true. 
-//3. Else: print false. 
+//3. Else: print false.    
 
-function compareObjects(object_1, object_2) {
-	// console.log(object_1, object_2)
-	if (object_1[:name].includes?object_2[:name] || object_1[:age].includes?object_2[:age]) { 
+function compareObjects(object1, object2) {
+	
+	   if (object1[:name] === object2[:name] || object1[:age] === object2[:age]) { 
 		console.log("true");
-	} else {
+		} else {
 		console.log("false");
-	}
-  }
+		}
+}
 
 }
 
 compareObjects({name: "Steven", age: 54}, {name: "Tamir", age: 54})
 
+//--------------------------------
 // Write a function that takes an integer for length, and builds and returns an array of strings 
 // of the given length. So if we ran your function with an argument of 3, we would get an array of 
 // 3 random words back (the words don't have to be actual sensical English words -- "nnnnfph" 
@@ -67,15 +68,18 @@ compareObjects({name: "Steven", age: 54}, {name: "Tamir", age: 54})
 // 	have to look up, but the solution on how to do so is relatively straightforward.)
 // Add driver code that does the following 10 times: generates an array, prints the array, feeds the
 // array to your "longest word" function, and prints the result.
-//---------------------------
 
-// Write a function that takes an integer for length, and builds and returns an array of strings of 
-// the given length. So if we ran your function with an argument of 3, we would get an array of 3 
-// random words back (the words don't have to be actual sensical English words -- "nnnnfph" totally 
-// 	counts). The words should be of randomly varying length, with a minimum of 1 letter and a maximum 
-// of 10 letters. (This involves a new trick, generating a random number, that you'll have to look up, 
-// 	but the solution on how to do so is relatively straightforward.)
-// Add driver code that does the following 10 times: generates an array, prints the array, feeds the 
-// array to your "longest word" function, and prints the result.
+
+//1. Define a function called "build array" that takes a single argument called "integer" in its parameters.
+//2. Define a variable called "strings array" that contains several words.  
+//3. Multiply "integer" by "strings array".fill method
+
+function buildArray(int) {
+var stringsArray = [];
+int * stringsArray.fill("Kiwi") 
+}
+
+buildArray(3)
+
 
 
