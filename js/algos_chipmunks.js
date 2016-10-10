@@ -8,8 +8,8 @@
 //2. Iterate through each phrase in the array. 
 //3. Determine the longest phrase by printing out the length of each phrase.  
 //4. If the phrase at index 0 is longer than the phrases at index 1 and index 2, print that it's the longest.
-//   Elsif the phrase at index 1 is longer than the phrases at index 0 and index 2, print that it's the longest. 
-//	 Else print that the phrase at index 3 is the longest. 
+//5. Elsif the phrase at index 1 is longer than the phrases at index 0 and index 2, print that it's the longest. 
+//6. Else print that the phrase at index 3 is the longest. 
 
 function returnLongestPhrase(phrases) {
 	// console.log(phrases);
@@ -40,16 +40,20 @@ console.log(returnLongestPhrase(["long phrase", "longest phrase", "longer phrase
 // Again, try to reason through the problem using the basics you've already learned, rather than looking up slick search 
 // functions that will do the job for you. We'd rather see you write code that you actually understand!
 
-//If object 1 includes things from object 2, print true. else, print false. 
+//1. Declarea  function called "compare objects" that takes two arguments in its parameters. 
+//2. If object 1's symbol for name includes anything from object 2's symbol for name, 
+//   or if object 1's symbol for age includes anything from object 2's symbol for age: 
+//		print true. 
+//3. Else: print false. 
 
 function compareObjects(object_1, object_2) {
 	// console.log(object_1, object_2)
-	if (object_1[:name].include?(object_2[name]) || (object_1[age].include?(object_2[age])) { 
+	if (object_1[:name].includes?object_2[:name] || object_1[:age].includes?object_2[:age]) { 
 		console.log("true");
 	} else {
 		console.log("false");
 	}
-	}
+  }
 
 }
 
