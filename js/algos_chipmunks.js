@@ -21,7 +21,7 @@ function returnLongestPhrase(phrases) {
 	} else if (phrases[1].length > phrases[0].length && phrases[2].length) {
 		console.log(phrases[1] + " is the longest phrase");
 	} else {
-		console.log(phrases[3] + " is the longest phrase");
+		console.log(phrases[2] + " is the longest phrase");
 	}
 }
 	
@@ -57,7 +57,7 @@ function compareObjects(object1, object2) {
 
 }
 
-compareObjects({name: "Steven", age: 54}, {name: "Tamir", age: 54})
+console.log(compareObjects({name: "Steven", age: 54}, {name: "Tamir", age: 54}))
 
 //--------------------------------
 // Write a function that takes an integer for length, and builds and returns an array of strings 
@@ -79,7 +79,7 @@ var stringsArray = [];
 int * stringsArray.fill("Kiwi") 
 }
 
-buildArray(3)
+console.log(buildArray(3))
 
 
 
